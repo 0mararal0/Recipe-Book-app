@@ -1,0 +1,8 @@
+.containerSidebar {
+  background-color: bisque;
+  height: 100%;
+  width: 200px;
+  border: 2px solid black;
+  text-align: start;
+  padding-left: 15px;
+}

@@ -1,0 +1,15 @@
+.containerNavbar {
+  margin: 0;
+  padding: 0;
+  background-color: bisque;
+
+  display: flex;
+  align-items: center;
+}
+.containerNavbar img {
+  width: 70px;
+  height: 70px;
+}
+.containerNavbar h1 {
+  font-size: 1.2rem;
+}
