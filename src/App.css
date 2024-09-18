@@ -10,3 +10,9 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.recetasGaleria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
