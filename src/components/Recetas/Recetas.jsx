@@ -1,5 +1,6 @@
 import React from "react";
 import "./styleRecetas.css";
+import { Link } from "react-router-dom";
 
 export const Recetas = (props) => {
   const handleDelete = () => {
@@ -9,11 +10,12 @@ export const Recetas = (props) => {
     props.setData(prov);
   };
   return (
-
-    <div className='comida'>
-
-         <Link to={`/recetas/${props.receta.id}`}> <img src={props.receta.image} alt="" />  </Link>
-      
+    <div className="comida">
+      {/*  <Link to={`/recetas/${props.receta.id}`}>
+        {" "}
+        <img src={props.receta.image} alt="" />{" "}
+      </Link> */}
+      <img src={props.receta.image} alt="" />
 
       <div>
         <h2>{props.receta.name}</h2>

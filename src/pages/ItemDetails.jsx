@@ -3,11 +3,12 @@ import recipes from "../assets/recipes.json";
 import { useParams } from "react-router-dom";
 
 export const ItemDetails = () => {
-  //const parametrosDinamicos = useParams();
-  const parametrosDinamicos = { id: "9e7f0d61-aa6b-418a-b56a-6418d19e6e1d" };
+  const parametrosDinamicos = useParams();
+  // const parametrosDinamicos = {recipe: "9e7f0d61-aa6b-418a-b56a-6418d19e6e1d",};
+  console.log(parametrosDinamicos);
 
   const recetaSeleccionada = recipes.find((eachReceta) => {
-    return eachReceta.id === parametrosDinamicos.id;
+    return eachReceta.id === parametrosDinamicos.recipe;
   });
 
   return (
@@ -39,13 +40,11 @@ export const ItemDetails = () => {
 
           <h3>Ingredinetes</h3>
           <ul>
-
             <li>Lorem ipsum </li>
             <li>Lorem ipsum </li>
             <li>Lorem ipsum </li>
             <li>Lorem ipsum </li>
             <li>Lorem ipsum </li>
-
           </ul>
         </div>
       )}

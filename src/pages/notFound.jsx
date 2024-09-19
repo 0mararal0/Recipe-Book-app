@@ -1,7 +1,10 @@
 import React from "react";
+import notFound from "../assets/images/404.jpg";
 
-export const notFound = () => {
-  return <div>
-    <img src="../images/404.jpg" alt="" />
-  </div>;
+export const NotFound = () => {
+  return (
+    <div>
+      <img src={notFound} alt="404" />
+    </div>
+  );
 };
