@@ -12,7 +12,7 @@ export const About = () => {
         <h2>Nuestra Historia</h2>
         <p>
           Bienvenido a <strong>(nombre que pongamos)</strong>, tu página
-          favorita para recetas caseras. Desde nuestro inicio en 2024, nos hemos
+          favorita de recetas caseras. Desde nuestro inicio en 2024, nos hemos
           dedicado a compartir la pasión por la buena comida.
         </p>
         <p>
@@ -27,16 +27,16 @@ export const About = () => {
           <li>
             <strong>Sofía:</strong> Experta en diseño de usuario, puedes
             encontrar su trabajo{" "}
-            <Link href="https://github.com/somorales/">aquí</Link>
+            <Link href="https://github.com/somorales/" className="links">aquí</Link>
           </li>
           <li>
             <strong>Alberto:</strong> Experto en JavaScript y desarrollo web, si
             quieres ver su trabajo pulsa{" "}
-            <Link href="https://github.com/0mararal0">aquí</Link>
+            <Link href="https://github.com/0mararal0" className="links">aquí</Link>
           </li>
           <li>
             <strong>Emma:</strong> Entusiasta de la comida, repositorio git:{" "}
-            <Link href="https://github.com/emxgrz">pincha aquí</Link>
+            <Link href="https://github.com/emxgrz" className="links">pincha aquí</Link>
           </li>
         </ul>
       </section>
