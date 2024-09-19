@@ -9,8 +9,12 @@ export const Recetas = (props) => {
     props.setData(prov);
   };
   return (
-    <div className="comida">
-      <img src={props.receta.image} alt="" />
+
+    <div className='comida'>
+
+         <Link to={`/recetas/${props.receta.id}`}> <img src={props.receta.image} alt="" />  </Link>
+      
+
       <div>
         <h2>{props.receta.name}</h2>
         <p>{props.receta.calories > 250 ? "☹️" : "🙂"} </p>
