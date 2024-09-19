@@ -1,6 +1,32 @@
-.contenedor{
-    display: flex;
+.contenedor {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  text-align: left;
 }
-.recetasImagenes{
-    width: 20px;
+
+
+.recetasImagenes {
+  width: 550px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+
+.fondo-receta {
+    background-image: url("../assets/images/fondo.png");
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    transform: scale(1, 1.1) translate(250px, 20px);
+    z-index: -1; /* para que se vaya al fondo y otras imagenes puedan estar encima */
+}
+
+.contenedor-span {
+    display: flex;
+    gap: 10px;
 }
