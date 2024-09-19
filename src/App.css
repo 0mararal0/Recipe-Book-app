@@ -4,15 +4,3 @@
 
   text-align: center;
 }
-.containerApp {
-  height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.recetasGaleria {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}

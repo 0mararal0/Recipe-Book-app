@@ -7,7 +7,7 @@ export const ItemDetails = () => {
   const parametrosDinamicos = useParams();
 
   const recetaSeleccionada = recipes.find((eachReceta) => {
-    return eachReceta.id === parametrosDinamicos.id;
+    return eachReceta.id === parametrosDinamicos.recipe;
   });
 
   return (
