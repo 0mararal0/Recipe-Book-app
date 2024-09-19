@@ -11,7 +11,9 @@ export const Recetas = (props) => {
   }
   return (
     <div className='comida'>
-      <img src={props.receta.image} alt="" />
+
+         <Link to={`/recetas/${props.receta.id}`}> <img src={props.receta.image} alt="" />  </Link>
+      
       <div>
       <h2>{props.receta.name}</h2> 
       <p>{props.receta.calories > 250 ? ("☹️") : ("🙂")} </p>
