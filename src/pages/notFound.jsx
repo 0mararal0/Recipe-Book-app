@@ -1,5 +1,7 @@
 import React from "react";
 
 export const notFound = () => {
-  return <div>notFound</div>;
+  return <div>
+    <img src="../images/404.jpg" alt="" />
+  </div>;
 };
