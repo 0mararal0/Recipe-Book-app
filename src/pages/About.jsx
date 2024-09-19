@@ -1,5 +1,6 @@
 import React from "react";
 import "./styleAbout.css";
+import { Link } from "react-router-dom";
 
 export const About = () => {
   return (
@@ -10,18 +11,34 @@ export const About = () => {
       <section className="about-content">
         <h2>Nuestra Historia</h2>
         <p>
-          Bienvenido a <strong>(nombre que pongamos)</strong>, tu página favorita para recetas caseras. Desde nuestro inicio en 2024, nos hemos dedicado a compartir la pasión por la buena comida.
+          Bienvenido a <strong>(nombre que pongamos)</strong>, tu página
+          favorita para recetas caseras. Desde nuestro inicio en 2024, nos hemos
+          dedicado a compartir la pasión por la buena comida.
         </p>
         <p>
-          Fundada por tres entusiastas de la cocina tradicional, nuestro objetivo es no solo ofrecer recetas espectaculares, sino también hacerlo en un formato visualmente atractivo. Creemos que cocinar debe ser una experiencia divertida, y qué es más divertido que diseñar tu propia página de recetas.
+          Fundada por tres entusiastas de la cocina tradicional, nuestro
+          objetivo es no solo ofrecer recetas espectaculares, sino también
+          hacerlo en un formato visualmente atractivo. Creemos que cocinar debe
+          ser una experiencia divertida, y qué es más divertido que diseñar tu
+          propia página de recetas.
         </p>
         <h2>¿Quiénes somos?</h2>
         <ul>
-          <li><strong>Sofía:</strong> Experta en diseño de usuario, puedes encontrar su trabajo <a href="https://github.com/somorales/">aquí</a></li>
-          <li><strong>Alberto:</strong> Experto en JavaScript y desarrollo web, si quieres ver su trabajo pulsa <a href="https://github.com/0mararal0">aquí</a></li>
-          <li><strong>Emma:</strong> Entusiasta de la comida, repositorio git: <a href="https://github.com/emxgrz">pincha aquí</a></li>
+          <li>
+            <strong>Sofía:</strong> Experta en diseño de usuario, puedes
+            encontrar su trabajo{" "}
+            <Link href="https://github.com/somorales/">aquí</Link>
+          </li>
+          <li>
+            <strong>Alberto:</strong> Experto en JavaScript y desarrollo web, si
+            quieres ver su trabajo pulsa{" "}
+            <Link href="https://github.com/0mararal0">aquí</Link>
+          </li>
+          <li>
+            <strong>Emma:</strong> Entusiasta de la comida, repositorio git:{" "}
+            <Link href="https://github.com/emxgrz">pincha aquí</Link>
+          </li>
         </ul>
-        
       </section>
       <footer className="about-footer">
         <p>&copy; 2024 (Recetas). Todos los derechos reservados.</p>
