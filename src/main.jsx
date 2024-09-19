@@ -5,13 +5,15 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import { About } from "./pages/About.jsx";
 import { ItemDetails } from "./pages/ItemDetails.jsx";
+import { Home } from "./pages/Home.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       {/* <App /> */}
       {/* <About /> */}
-      <ItemDetails />
+      {/* <ItemDetails /> */}
+      <Home />
     </BrowserRouter>
   </StrictMode>
 );
