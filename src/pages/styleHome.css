@@ -1,0 +1,17 @@
+.containerHome {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.side-recetas {
+  display: flex;
+  gap: 15px;
+}
+.recetasGaleria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-block: 20px;
+}
