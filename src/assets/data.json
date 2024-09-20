@@ -1,0 +1,688 @@
+[
+  {
+    "id": 1,
+    "titulo": "Ensalada de Quinoa",
+    "ingredientes": [
+      "quinoa",
+      "tomate",
+      "pepino",
+      "cebolla",
+      "aceite de oliva",
+      "limón"
+    ],
+    "porciones": 4,
+    "elaboracion": "Cocinar la quinoa según las instrucciones del paquete. Mezclar con los demás ingredientes y aliñar con aceite de oliva y limón.",
+    "tipo_de_plato": "Entrante",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "20 minutos",
+    "imagen": "https://images.cookforyourlife.org/wp-content/uploads/2018/08/Quinoa-Tabbouleh-Salad-e1643842744790.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Sopa de Tomate",
+    "ingredientes": [
+      "tomate",
+      "cebolla",
+      "ajo",
+      "caldo de verduras",
+      "albahaca"
+    ],
+    "porciones": 4,
+    "elaboracion": "Sofreír la cebolla y el ajo, añadir los tomates y el caldo. Cocinar a fuego lento y triturar. Servir con albahaca fresca.",
+    "tipo_de_plato": "Primer plato",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "30 minutos",
+    "imagen": "https://t1.uc.ltmcdn.com/es/posts/3/0/9/como_hacer_sopa_de_tomate_casera_25903_orig.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "Pollo al Curry",
+    "ingredientes": [
+      "pollo",
+      "curry en polvo",
+      "leche de coco",
+      "cebolla",
+      "ajo",
+      "jengibre"
+    ],
+    "porciones": 4,
+    "elaboracion": "Sofreír la cebolla, el ajo y el jengibre. Añadir el pollo y el curry. Cocinar hasta que el pollo esté hecho y añadir la leche de coco. Cocinar a fuego lento.",
+    "tipo_de_plato": "Segundo plato",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "45 minutos",
+    "imagen": "https://media.istockphoto.com/id/1170729895/es/foto/mantequilla-india-pollo-horizontal-foto.jpg?s=612x612&w=0&k=20&c=MEjN4QtZbDc4sZu0NCQG0RbHV7_6HEgH8qmiXaArusg="
+  },
+  {
+    "id": 4,
+    "titulo": "Arroz con Verduras",
+    "ingredientes": [
+      "arroz",
+      "zanahoria",
+      "guisantes",
+      "pimiento",
+      "cebolla",
+      "caldo de verduras"
+    ],
+    "porciones": 4,
+    "elaboracion": "Sofreír las verduras, añadir el arroz y el caldo. Cocinar hasta que el arroz esté hecho.",
+    "tipo_de_plato": "Guarnición",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "30 minutos",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LH39hLwTvT2NZoeVTIcn-Y8n2ag1w0aXXQ&s"
+  },
+  {
+    "id": 5,
+    "titulo": "Tarta de Manzana",
+    "ingredientes": ["manzana", "harina", "azúcar", "mantequilla", "canela"],
+    "porciones": 8,
+    "elaboracion": "Preparar la masa con harina, azúcar y mantequilla. Rellenar con manzanas y canela. Hornear hasta que esté dorada.",
+    "tipo_de_plato": "Postre",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "1 hora",
+    "imagen": "https://www.laespanolaaceites.com/wp-content/uploads/2019/06/tarta-de-bizcocho-con-manzana-1080x671.jpg"
+  },
+  {
+    "id": 6,
+    "titulo": "Gazpacho Andaluz",
+    "ingredientes": [
+      "tomate",
+      "pepino",
+      "pimiento",
+      "ajo",
+      "aceite de oliva",
+      "vinagre",
+      "pan"
+    ],
+    "porciones": 4,
+    "elaboracion": "Triturar todos los ingredientes y enfriar en la nevera antes de servir.",
+    "tipo_de_plato": "Entrante",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "15 minutos",
+    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2018/06/01/5e99784964d1d.jpeg"
+  },
+  {
+    "id": 7,
+    "titulo": "Paella Valenciana",
+    "ingredientes": [
+      "arroz",
+      "pollo",
+      "conejo",
+      "judía verde",
+      "garrofón",
+      "tomate",
+      "aceite de oliva",
+      "azafrán"
+    ],
+    "porciones": 6,
+    "elaboracion": "Sofreír las carnes y las verduras, añadir el arroz y el caldo. Cocinar a fuego lento hasta que el arroz esté hecho.",
+    "tipo_de_plato": "Segundo plato",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "1 hora y 30 minutos",
+    "imagen": "https://www.paulinacocina.net/wp-content/uploads/2023/09/paella-valenciana-tradicional.jpg"
+  },
+  {
+    "id": 8,
+    "titulo": "Tortilla de Patatas",
+    "ingredientes": ["patatas", "huevos", "cebolla", "aceite de oliva", "sal"],
+    "porciones": 4,
+    "elaboracion": "Freír las patatas y la cebolla, mezclar con los huevos batidos y cocinar en una sartén hasta que esté dorada.",
+    "tipo_de_plato": "Primer plato",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "40 minutos",
+    "imagen": "https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2022/07/11/fotografia-de-una-tortilla-de-patata.jpeg"
+  },
+  {
+    "id": 9,
+    "titulo": "Croquetas de Jamón",
+    "ingredientes": [
+      "jamón",
+      "harina",
+      "leche",
+      "mantequilla",
+      "huevo",
+      "pan rallado"
+    ],
+    "porciones": 6,
+    "elaboracion": "Preparar una bechamel con jamón, enfriar, formar croquetas, rebozar y freír.",
+    "tipo_de_plato": "Entrante",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "1 hora",
+    "imagen": "https://www.hola.com/horizon/landscape/f88ad2ad40be-croquetas-de-jamon-t.jpg"
+  },
+  {
+    "id": 10,
+    "titulo": "Flan de Huevo",
+    "ingredientes": ["huevos", "leche", "azúcar", "vainilla"],
+    "porciones": 6,
+    "elaboracion": "Mezclar todos los ingredientes, verter en moldes y cocinar al baño maría hasta que cuaje.",
+    "tipo_de_plato": "Postre",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "1 hora y 15 minutos",
+    "imagen": "https://i.pinimg.com/736x/0b/79/44/0b7944d1830da683504e05fe692a698b.jpgg"
+  },
+  {
+    "id": 11,
+    "titulo": "Salmorejo",
+    "ingredientes": [
+      "tomate",
+      "pan",
+      "ajo",
+      "aceite de oliva",
+      "vinagre",
+      "huevo duro",
+      "jamón serrano"
+    ],
+    "porciones": 4,
+    "elaboracion": "Triturar todos los ingredientes excepto el huevo y el jamón. Servir frío con huevo duro y jamón por encima.",
+    "tipo_de_plato": "Entrante",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "20 minutos",
+    "imagen": "https://www.aceitesdeolivadeespana.com/wp-content/uploads/2024/04/salmorejo_jamon_iberico.jpeg"
+  },
+  {
+    "id": 12,
+    "titulo": "Fabada Asturiana",
+    "ingredientes": [
+      "fabes",
+      "chorizo",
+      "morcilla",
+      "tocino",
+      "cebolla",
+      "ajo",
+      "pimentón"
+    ],
+    "porciones": 6,
+    "elaboracion": "Cocinar las fabes con los embutidos y las especias a fuego lento hasta que estén tiernas.",
+    "tipo_de_plato": "Primer plato",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "2 horas",
+    "imagen": "https://www.aceitesdeolivadeespana.com/wp-content/uploads/2023/01/AdobeStock_319493286-1.jpeg"
+  },
+  {
+    "id": 13,
+    "titulo": "Cocido Madrileño",
+    "ingredientes": [
+      "garbanzos",
+      "pollo",
+      "ternera",
+      "chorizo",
+      "morcilla",
+      "tocino",
+      "patatas",
+      "zanahorias",
+      "repollo"
+    ],
+    "porciones": 8,
+    "elaboracion": "Cocinar todos los ingredientes juntos en una olla grande hasta que estén tiernos.",
+    "tipo_de_plato": "Segundo plato",
+    "dificultad": "Difícil",
+    "tiempo_de_preparacion": "3 horas",
+    "imagen": "https://canalcocina.es/medias/images/0001052181EscuelaCanalCocinaS01E004CocidoMadrilenoHR0101.jpg"
+  },
+  {
+    "id": 14,
+    "titulo": "Pimientos Rellenos",
+    "ingredientes": [
+      "pimientos",
+      "carne picada",
+      "arroz",
+      "cebolla",
+      "ajo",
+      "tomate",
+      "queso"
+    ],
+    "porciones": 4,
+    "elaboracion": "Rellenar los pimientos con una mezcla de carne, arroz y verduras. Hornear hasta que estén tiernos.",
+    "tipo_de_plato": "Segundo plato",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "1 hora y 30 minutos",
+    "imagen": "https://lapalmerarosa.com/wp-content/uploads/2019/11/pimientos-rellenos-de-carne-6.jpg"
+  },
+  {
+    "id": 15,
+    "titulo": "Natillas",
+    "ingredientes": ["leche", "huevos", "azúcar", "canela", "limón"],
+    "porciones": 6,
+    "elaboracion": "Cocinar la leche con canela y limón. Mezclar con los huevos y el azúcar, y cocinar a fuego lento hasta que espese.",
+    "tipo_de_plato": "Postre",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "30 minutos",
+    "imagen": "https://sivarious.com/wp-content/uploads/2020/12/natillas-caseras.jpg"
+  },
+  {
+    "id": 16,
+    "titulo": "Calamares a la Romana",
+    "ingredientes": [
+      "calamares",
+      "harina",
+      "huevo",
+      "aceite de oliva",
+      "limón"
+    ],
+    "porciones": 4,
+    "elaboracion": "Rebozar los calamares en harina y huevo, y freír en aceite caliente. Servir con limón.",
+    "tipo_de_plato": "Entrante",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "20 minutos",
+    "imagen": "https://t1.uc.ltmcdn.com/es/posts/0/3/0/como_hacer_calamares_a_la_romana_52030_orig.jpg"
+  },
+  {
+    "id": 17,
+    "titulo": "Gazpacho Manchego",
+    "ingredientes": [
+      "conejo",
+      "pollo",
+      "pimiento",
+      "tomate",
+      "ajo",
+      "pan ácimo"
+    ],
+    "porciones": 6,
+    "elaboracion": "Cocinar las carnes con las verduras y el pan ácimo en una cazuela hasta que estén tiernas.",
+    "tipo_de_plato": "Primer plato",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "1 hora y 30 minutos",
+    "imagen": "https://realacademiadegastronomia.com/wp-content/uploads/2021/05/Gazpachos-manchegos-o-galianos-BAJA-1024x768.jpg"
+  },
+  {
+    "id": 18,
+    "titulo": "Merluza a la Gallega",
+    "ingredientes": [
+      "merluza",
+      "patatas",
+      "cebolla",
+      "pimentón",
+      "aceite de oliva"
+    ],
+    "porciones": 4,
+    "elaboracion": "Cocinar la merluza y las patatas con cebolla y pimentón. Servir con un chorrito de aceite de oliva.",
+    "tipo_de_plato": "Segundo plato",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "40 minutos",
+    "imagen": "https://i.ytimg.com/vi/7MB9eROtapI/maxresdefault.jpg"
+  },
+  {
+    "id": 19,
+    "titulo": "Patatas Bravas",
+    "ingredientes": [
+      "patatas",
+      "tomate",
+      "pimentón",
+      "aceite de oliva",
+      "ajo",
+      "mayonesa"
+    ],
+    "porciones": 4,
+    "elaboracion": "Freír las patatas y servir con una salsa de tomate picante y mayonesa.",
+    "tipo_de_plato": "Entrante",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "30 minutos",
+    "imagen": "https://thecookinglab.es/wp-content/uploads/2014/02/patatas-bravas-receta.jpg"
+  },
+  {
+    "id": 20,
+    "titulo": "Arroz con Leche",
+    "ingredientes": ["arroz", "leche", "azúcar", "canela", "limón"],
+    "porciones": 6,
+    "elaboracion": "Cocinar el arroz con la leche, el azúcar, la canela y la cáscara de limón a fuego lento hasta que espese.",
+    "tipo_de_plato": "Postre",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "1 hora",
+    "imagen": "https://peopleenespanol.com/thmb/O4bAeAl5OXtRrGPmtCsHh4UpzDM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/recetas-1092-arroz-con-leche-2000-ac1485846508488e8da95f5f9c8de793.jpg"
+  },
+  {
+    "id": 21,
+    "titulo": "Empanada Gallega",
+    "ingredientes": [
+      "masa de empanada",
+      "atún",
+      "pimiento",
+      "cebolla",
+      "tomate"
+    ],
+    "porciones": 8,
+    "elaboracion": "Rellenar la masa de empanada con una mezcla de atún, pimiento, cebolla y tomate. Hornear hasta que esté dorada.",
+    "tipo_de_plato": "Segundo plato",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "1 hora y 30 minutos",
+    "imagen": "https://lacocinadefrabisa.lavozdegalicia.es/wp-content/uploads/2021/04/empanada-zorza-bis.jpg"
+  },
+  {
+    "id": 22,
+    "titulo": "Pisto Manchego",
+    "ingredientes": [
+      "calabacín",
+      "berenjena",
+      "pimiento",
+      "tomate",
+      "cebolla",
+      "aceite de oliva"
+    ],
+    "porciones": 4,
+    "elaboracion": "Sofreír todas las verduras en aceite de oliva hasta que estén tiernas.",
+    "tipo_de_plato": "Guarnición",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "45 minutos",
+    "imagen": "https://www.hola.com/horizon/landscape/3de6cb943066-pisto-manchego-tradicional-t.jpg"
+  },
+  {
+    "id": 23,
+    "titulo": "Churros con Chocolate",
+    "ingredientes": ["harina", "agua", "sal", "aceite de oliva", "chocolate"],
+    "porciones": 6,
+    "elaboracion": "Preparar la masa de churros, freír en aceite caliente y servir con chocolate caliente.",
+    "tipo_de_plato": "Postre",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "30 minutos",
+    "imagen": "https://images.rappi.com.ar/products/307122558540_fbrblsxnaoqb_228346413933_icymdsntyfzcsc_7792590003617_1.jpg"
+  },
+  {
+    "id": 24,
+    "titulo": "Pulpo a la Gallega",
+    "ingredientes": ["pulpo", "patatas", "pimentón", "aceite de oliva", "sal"],
+    "porciones": 4,
+    "elaboracion": "Cocinar el pulpo y las patatas, cortar en rodajas y servir con pimentón, aceite de oliva y sal.",
+    "tipo_de_plato": "Segundo plato",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "1 hora",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYhBaPVW-mjzLnfaJ1UlDX6Rck8-DvyFFMyQ&s"
+  },
+  {
+    "id": 25,
+    "titulo": "Tarta de Santiago",
+    "ingredientes": ["almendra molida", "huevos", "azúcar", "limón", "canela"],
+    "porciones": 8,
+    "elaboracion": "Mezclar todos los ingredientes, verter en un molde y hornear hasta que esté dorada.",
+    "tipo_de_plato": "Postre",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "1 hora",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRANuA-yOfF7x9I46OOp6kQG_chX77MzqXz6sRjnkWqFv7bCh4Ros29cwpQcaF3xn5nyHE&usqp=CAU"
+  },
+  {
+    "id": 26,
+    "titulo": "Canelones de Carne",
+    "ingredientes": [
+      "carne picada",
+      "pasta para canelones",
+      "tomate",
+      "cebolla",
+      "queso",
+      "bechamel"
+    ],
+    "porciones": 6,
+    "elaboracion": "Rellenar la pasta de canelones con carne picada y verduras, cubrir con bechamel y queso, y hornear.",
+    "tipo_de_plato": "Segundo plato",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "1 hora y 30 minutos",
+    "imagen": "https://www.solcatering.es/wp-content/uploads/2021/02/canalones-de-carne-gratinados.jpg"
+  },
+  {
+    "id": 27,
+    "titulo": "Huevos Rellenos",
+    "ingredientes": ["huevos", "atún", "mayonesa", "tomate", "aceitunas"],
+    "porciones": 4,
+    "elaboracion": "Cocer los huevos, partir por la mitad y rellenar con una mezcla de atún, mayonesa y tomate. Decorar con aceitunas.",
+    "tipo_de_plato": "Entrante",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "30 minutos",
+    "imagen": "https://www.divinacocina.es/wp-content/uploads/huevos-rellenos-curry.jpg"
+  },
+  {
+    "id": 28,
+    "titulo": "Lentejas con Chorizo",
+    "ingredientes": [
+      "lentejas",
+      "chorizo",
+      "zanahoria",
+      "patata",
+      "cebolla",
+      "ajo"
+    ],
+    "porciones": 6,
+    "elaboracion": "Cocinar las lentejas con las verduras y el chorizo a fuego lento hasta que estén tiernas.",
+    "tipo_de_plato": "Primer plato",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "1 hora y 30 minutos",
+    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2018/11/23/5e99797c2b095.jpeg"
+  },
+  {
+    "id": 29,
+    "titulo": "Bacalao a la Vizcaína",
+    "ingredientes": [
+      "bacalao",
+      "pimientos choriceros",
+      "cebolla",
+      "ajo",
+      "tomate",
+      "aceite de oliva"
+    ],
+    "porciones": 4,
+    "elaboracion": "Cocinar el bacalao con una salsa de pimientos choriceros, cebolla, ajo y tomate.",
+    "tipo_de_plato": "Segundo plato",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "1 hora",
+    "imagen": "https://www.hogarmania.com/archivos/201510/5643-1-bacalao-a-la-vizcaina-1028-xl-1280x720x80xX.jpg"
+  },
+  {
+    "id": 30,
+    "titulo": "Pollo a la Cerveza",
+    "ingredientes": [
+      "pollo",
+      "cerveza",
+      "cebolla",
+      "ajo",
+      "zanahoria",
+      "aceite de oliva"
+    ],
+    "porciones": 4,
+    "elaboracion": "Cocinar el pollo con la cerveza y las verduras a fuego lento hasta que esté tierno.",
+    "tipo_de_plato": "Segundo plato",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "1 hora",
+    "imagen": "https://i.ytimg.com/vi/b3RELMib10o/maxresdefault.jpg"
+  },
+  {
+    "id": 31,
+    "titulo": "Tarta de Queso",
+    "ingredientes": [
+      "queso crema",
+      "huevos",
+      "azúcar",
+      "nata",
+      "galletas",
+      "mantequilla"
+    ],
+    "porciones": 8,
+    "elaboracion": "Mezclar el queso crema, los huevos, el azúcar y la nata. Verter sobre una base de galletas y mantequilla. Hornear hasta que esté dorada.",
+    "tipo_de_plato": "Postre",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "1 hora y 30 minutos",
+    "imagen": "https://i.ytimg.com/vi/SzdCr5elApA/maxresdefault.jpg"
+  },
+  {
+    "id": 32,
+    "titulo": "Gambas al Ajillo",
+    "ingredientes": [
+      "gambas",
+      "ajo",
+      "guindilla",
+      "aceite de oliva",
+      "perejil"
+    ],
+    "porciones": 4,
+    "elaboracion": "Sofreír el ajo y la guindilla en aceite de oliva, añadir las gambas y cocinar hasta que estén hechas. Espolvorear con perejil.",
+    "tipo_de_plato": "Entrante",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "15 minutos",
+    "imagen": "https://www.paulinacocina.net/wp-content/uploads/2022/06/receta-de-langostinos-al-ajillo-1200x774.jpg"
+  },
+  {
+    "id": 33,
+    "titulo": "Cordero Asado",
+    "ingredientes": [
+      "pierna de cordero",
+      "ajo",
+      "romero",
+      "aceite de oliva",
+      "sal",
+      "pimienta"
+    ],
+    "porciones": 6,
+    "elaboracion": "Marinar la pierna de cordero con ajo, romero, aceite de oliva, sal y pimienta. Asar en el horno hasta que esté dorada.",
+    "tipo_de_plato": "Segundo plato",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "2 horas",
+    "imagen": "https://www.enekosukaldari.com/wp-content/uploads/cordero_lechal_asado_al_horno_01.jpg"
+  },
+  {
+    "id": 34,
+    "titulo": "Crema Catalana",
+    "ingredientes": ["leche", "yemas de huevo", "azúcar", "canela", "limón"],
+    "porciones": 6,
+    "elaboracion": "Cocinar la leche con canela y limón. Mezclar con las yemas y el azúcar, y cocinar a fuego lento hasta que espese. Caramelizar el azúcar por encima antes de servir.",
+    "tipo_de_plato": "Postre",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "1 hora",
+    "imagen": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/A13E0EAA-DFA7-4264-8B3B-79CCC77F9282/Derivates/B59B434D-7C1D-4EEB-9CE2-B21BD45533D9.jpg"
+  },
+  {
+    "id": 35,
+    "titulo": "Ensalada de Pollo",
+    "ingredientes": [
+      "pollo",
+      "lechuga",
+      "tomate",
+      "pepino",
+      "zanahoria",
+      "aceite de oliva",
+      "vinagre"
+    ],
+    "porciones": 4,
+    "elaboracion": "Cocinar el pollo y mezclar con las verduras. Aliñar con aceite de oliva y vinagre.",
+    "tipo_de_plato": "Entrante",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "30 minutos",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlxQCStT1hqXPbLNOM6BvvRcdc4okVmvmSKQ&s"
+  },
+  {
+    "id": 36,
+    "titulo": "Fideuá",
+    "ingredientes": [
+      "fideos",
+      "calamares",
+      "gambas",
+      "tomate",
+      "pimiento",
+      "ajo",
+      "caldo de pescado"
+    ],
+    "porciones": 6,
+    "elaboracion": "Sofreír los calamares, las gambas y las verduras. Añadir los fideos y el caldo de pescado. Cocinar hasta que los fideos estén hechos.",
+    "tipo_de_plato": "Segundo plato",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "1 hora",
+    "imagen": "https://laxernadelmar.com/wp-content/uploads/2023/04/Los-6-ingredientes-que-no-pueden-faltar-en-una-fideua.jpg"
+  },
+  {
+    "id": 37,
+    "titulo": "Pimientos de Piquillo Rellenos",
+    "ingredientes": [
+      "pimientos de piquillo",
+      "bacalao",
+      "cebolla",
+      "ajo",
+      "nata",
+      "aceite de oliva"
+    ],
+    "porciones": 4,
+    "elaboracion": "Rellenar los pimientos con una mezcla de bacalao, cebolla y ajo. Cocinar en una salsa de nata y aceite de oliva.",
+    "tipo_de_plato": "Entrante",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "45 minutos",
+    "imagen": "https://www.albo.es/wp-content/uploads/2019/08/pimientos-piquillo-rellenos-atun.jpg"
+  },
+  {
+    "id": 38,
+    "titulo": "Rabo de Toro",
+    "ingredientes": [
+      "rabo de toro",
+      "cebolla",
+      "zanahoria",
+      "vino tinto",
+      "caldo de carne",
+      "ajo"
+    ],
+    "porciones": 6,
+    "elaboracion": "Cocinar el rabo de toro con las verduras, el vino tinto y el caldo de carne a fuego lento hasta que esté tierno.",
+    "tipo_de_plato": "Segundo plato",
+    "dificultad": "Difícil",
+    "tiempo_de_preparacion": "3 horas",
+    "imagen": "https://carniceriavictorsalvo.com/wp-content/uploads/2023/02/receta-rabo-de-toro-presentacion-plato-Carniceria-Victor-Salvo.jpg"
+  },
+  {
+    "id": 39,
+    "titulo": "Tarta de Limón",
+    "ingredientes": ["limón", "huevos", "azúcar", "harina", "mantequilla"],
+    "porciones": 8,
+    "elaboracion": "Preparar una masa con harina y mantequilla. Rellenar con una mezcla de limón, huevos y azúcar. Hornear hasta que esté dorada.",
+    "tipo_de_plato": "Postre",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "1 hora y 30 minutos",
+    "imagen": "https://cocinaabuenashoras.com/files/tarta-de-limon-y-nata-2.jpg"
+  },
+  {
+    "id": 40,
+    "titulo": "Salmón al Horno",
+    "ingredientes": [
+      "salmón",
+      "limón",
+      "ajo",
+      "eneldo",
+      "aceite de oliva",
+      "sal",
+      "pimienta"
+    ],
+    "porciones": 4,
+    "elaboracion": "Marinar el salmón con limón, ajo, eneldo, aceite de oliva, sal y pimienta. Hornear hasta que esté hecho.",
+    "tipo_de_plato": "Segundo plato",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "30 minutos",
+    "imagen": "https://www.paulinacocina.net/wp-content/uploads/2022/05/receta-de-salmon-al-horno.jpg"
+  },
+  {
+    "id": 41,
+    "titulo": "Tortitas Americanas",
+    "ingredientes": [
+      "harina",
+      "huevos",
+      "leche",
+      "azúcar",
+      "mantequilla",
+      "levadura"
+    ],
+    "porciones": 4,
+    "elaboracion": "Mezclar todos los ingredientes y cocinar en una sartén hasta que estén doradas por ambos lados.",
+    "tipo_de_plato": "Postre",
+    "dificultad": "Fácil",
+    "tiempo_de_preparacion": "20 minutos",
+    "imagen": "https://blog.dia.es/wp-content/uploads/2022/04/tortitas-americanas-esponjosas.jpg"
+  },
+  {
+    "id": 42,
+    "titulo": "Sopa de Marisco",
+    "ingredientes": [
+      "marisco variado",
+      "tomate",
+      "cebolla",
+      "ajo",
+      "caldo de pescado",
+      "pimiento"
+    ],
+    "porciones": 6,
+    "elaboracion": "Cocinar el marisco con las verduras y el caldo de pescado a fuego lento.",
+    "tipo_de_plato": "Primer plato",
+    "dificultad": "Media",
+    "tiempo_de_preparacion": "1 hora",
+    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2018/12/28/5e997f89bca84.r_d.493-309-0.jpeg"
+  }
+]
