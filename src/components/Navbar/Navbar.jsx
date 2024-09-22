@@ -31,7 +31,7 @@ export const Navbar = () => {
             <p>Crear Receta</p>
           </div>
         </Link>
-
+{
   //  <div>
      // <div className="containerNavbar">
        // <img src={logo} alt="logo" />
@@ -42,5 +42,8 @@ export const Navbar = () => {
 
     //  </div>
  //   </div>
+}
+    </div>
+  </div>
   );
 };

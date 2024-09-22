@@ -28,9 +28,8 @@ function App() {
       <Route path={"/"} element={<Home data={data} setData={setData} />} />
       <Route path="/about" element={<About />} />
 
-     // <Route path={"/itemDetails/:recipe"} element={<ItemDetails />} />
-     // <Route path={"/favoritesRecipes"} element={<FavoriteRecipes />} />
-    //  <Route path={"/createRecipe"} element={<NotFound />} />{" "}
+    {/* <Route path={"/favoritesRecipes"} element={<FavoriteRecipes />} /> */}
+    {/*  <Route path={"/createRecipe"} element={<NotFound />} />{" "} */}
       {/* falta añadir vista */}
 
       <Route
@@ -43,7 +42,7 @@ function App() {
       />
 
       <Route path={"*"} element={<NotFound />} />
-      <Route path="/crear-receta" element={<CrearReceta setData={setData} />} />
+      <Route path="/createRecipe" element={<CrearReceta setData={setData} />} />
     </Routes>
   );
 }

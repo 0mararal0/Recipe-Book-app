@@ -9,12 +9,15 @@ import { Footer } from "../components/Footer/Footer";
 import "./styleHome.css";
 import { Link } from "react-router-dom";
 import iconComida from "../assets/images/iconComida.png";
+import { useState } from "react";
 
 let dataInitial = recipes.slice(0).splice(0, 7);
 
 
-export const Home = () => {
-  const [data, setData] = useState(recipes);
+export const Home = (props) => {
+  // este estado ya está definido en App, así que no hace falta acá, por eso comento
+  // además, uso props para usar el data que definimos en App
+  // const [data, setData] = useState(recipes);
   const [showData, setShowData] = useState([]);
   const [countCard, setCountCard] = useState(8);
 
@@ -55,7 +58,7 @@ export const Home = () => {
         {/* <Sidebar /> */}
         <div className="recetasGaleria">
 
-          {data.slice(0, countCard).map((receta, index) => {
+          {props.data.slice(0, countCard).map((receta, index) => {
 
          // {props.data.map((receta, index) => {
 
@@ -67,7 +70,7 @@ export const Home = () => {
                     setData={props.setData}
                     index={index}
 
-                    data={data} //nuevo archivo de datos
+                    data={props.data} //nuevo archivo de datos
 
                    // data={props.data}//nuevo archivo de datos
 
