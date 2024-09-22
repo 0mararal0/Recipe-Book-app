@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: "nunito";
 }
 .side-recetas {
   display: flex;
@@ -14,4 +15,81 @@
   gap: 15px;
   justify-content: center;
   margin-block: 20px;
+}
+.containerTitle {
+  font-family: "choco";
+}
+.containerTitle h3 {
+  font-size: 4rem;
+  margin-block: 10px;
+  margin-right: 200px;
+}
+.containerTitle h5 {
+  margin-block: 10px;
+  font-size: 1.5rem;
+}
+.buttonSelect {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-block: 30px;
+}
+.buttonSelect button {
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 2px 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: "nunito";
+  font-size: 1.2rem;
+}
+.buttonEntrante {
+  background-color: #ff5d28;
+}
+.buttonPrincipal {
+  background-color: #98abee;
+}
+.buttonPostre {
+  background-color: #ee99c2;
+}
+.buttonTodos {
+  background-color: #a3c9aa;
+}
+.buttonSelect button img {
+  width: 20px;
+}
+
+.buttonMostrarMas button {
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 2px 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: "nunito";
+  font-size: 1.2rem;
+  margin-inline: auto;
+  margin-block: 20px;
+  background-color: #a3c9aa;
+}
+
+.buttonEntrante:hover {
+  background-color: #e55424;
+}
+.buttonPrincipal:hover {
+  background-color: #8495d1;
+}
+.buttonPostre:hover {
+  background-color: #cd82a6;
+}
+.buttonTodos:hover {
+  background-color: #8daf93;
+}
+.buttonMostrarMas button:hover {
+  background-color: #8daf93;
 }
