@@ -1,13 +1,21 @@
-@import url('https://fonts.cdnfonts.com/css/milk-cream');
-@import url('https://fonts.cdnfonts.com/css/nunito');
-
-body {
-  background-color: #FFFAEA;
+@font-face {
+  font-family: "choco";
+  src: url("./assets/font/Creamy_Chocolate.ttf");
+}
+@font-face {
+  font-family: "nunito";
+  src: url("./assets/font/Nunito-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "milk";
+  src: url("./assets/font/Creamy_Garden_Regular.ttf");
 }
 
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-
   text-align: center;
+  background-color: #fffaea;
 }
