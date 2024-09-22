@@ -1,13 +1,15 @@
 import React from "react";
 import "./FormularioEditarReceta.css";
-import recipes from "../../assets/data.json";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-export function FormularioEditarReceta() {
+export function FormularioEditarReceta(props) {
+  let navegar = useNavigate();
+
   const parametrosDinamicos = useParams();
 
-  const recetaSeleccionada = recipes.find((eachReceta) => {
+  const recetaSeleccionada = props.data.find((eachReceta) => {
     const identificadorReceta = parseInt(
       parametrosDinamicos.identificadorReceta
     ); //para cambiar recipe que es cadena a número que es nuestro id
@@ -63,7 +65,10 @@ export function FormularioEditarReceta() {
   };
 
   const handleEditar = (event) => {
+    event.preventDefault();
+
     let recetaEditada = {
+      id: recetaSeleccionada.id,
       titulo: titulo,
       descripcion: descripcion,
       ingredientes: ingredientes,
@@ -74,17 +79,27 @@ export function FormularioEditarReceta() {
       imagen: imagen,
     };
 
-    //props.agregarNuevoEstudiante(nuevoEstudiante);
+    // lista de recetas sin la receta que estamos editando
+    let recetasFiltradas = props.data.filter((cadaReceta) => {
+      return cadaReceta.id !== recetaSeleccionada.id;
+    });
 
-    event.preventDefault();
+    // agregamos de vuelta la receta editada
+    recetasFiltradas.push(recetaEditada);
+
+    // guardamos en el estado
+    props.setData(recetasFiltradas);
+
+    // aca usamos navegar para poder ir a la pagina de itemDetails
+    // tenemos que pasarle la url a donde queremos irnos
+    navegar(`/itemDetails/${recetaSeleccionada.id}`);
   };
-
 
   return (
     <div>
       {/* FORM */}
-      <form onSubmit={handleEditar}> 
-        <span>Editar receta</span>
+      <form onSubmit={handleEditar}>
+        <h1>Editar receta</h1>
         <div>
           <label>
             <div>Titulo</div>
@@ -131,7 +146,7 @@ export function FormularioEditarReceta() {
 
         <div>
           <label>
-            Dificultad
+            <div>Dificultad</div>
             <select
               name="nivel de dificultad"
               value={dificultad}
@@ -144,7 +159,7 @@ export function FormularioEditarReceta() {
           </label>
 
           <label>
-            Tipo de Plato
+            <div>Tipo de Plato</div>
             <select
               name="nivel de dificultad"
               value={tipo}

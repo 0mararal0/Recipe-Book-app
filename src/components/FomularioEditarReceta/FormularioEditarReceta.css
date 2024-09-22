@@ -1,3 +1,20 @@
 label{
     display: block;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 20px;
+}
+
+input{
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+textarea {
+    border-radius: 5px;
+    min-width: 200px;
+    min-height: 50px;
 }
