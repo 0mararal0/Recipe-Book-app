@@ -107,3 +107,8 @@ select:focus {
     background-color: #045842;
     color: white;
 }
+
+.contenedor-botones {
+    display: flex;
+    justify-content: right;
+}
