@@ -6,6 +6,7 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { ItemDetails } from "./pages/ItemDetails";
 import { NotFound } from "./pages/NotFound";
+import {FormularioEditarReceta} from "./components/FomularioEditarReceta/FormularioEditarReceta"
 
 /* import { Navbar } from "./components/Navbar/Navbar";
 import { Footer } from "./components/Footer/Footer";
@@ -19,7 +20,9 @@ function App() {
       <Route path={"/"} element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path={"/itemDetails/:recipe"} element={<ItemDetails />} /> 
+      <Route path={"/formularioEditarReceta/:identificadorReceta"} element={<FormularioEditarReceta/>} />
       <Route path={"*"} element={<NotFound />} />
+     
     </Routes>
   );
 }
