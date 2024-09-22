@@ -1,15 +1,30 @@
 import React from "react";
-import recipes from "../assets/data.json";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./ItemDetails.css";
+import { Link } from "react-router-dom";
 
-export const ItemDetails = () => {
+export const ItemDetails = (props) => {
+  let navegar = useNavigate();
   const parametrosDinamicos = useParams();
+  const identificadorReceta = parseInt(parametrosDinamicos.recipe); //para cambiar recipe que es cadena a número que es nuestro id
 
-  const recetaSeleccionada = recipes.find((eachReceta) => {
-    const identificadorReceta = parseInt(parametrosDinamicos.recipe)//para cambiar recipe que es cadena a número que es nuestro id
+  const recetaSeleccionada = props.data.find((eachReceta) => {
     return eachReceta.id === identificadorReceta;
   });
+
+
+  const handleEliminarReceta = (event) => {
+    // lista de recetas sin la receta que estamos viendo
+    let recetasFiltradas = props.data.filter((cadaReceta) => {
+      return cadaReceta.id !== identificadorReceta;
+    });
+
+    // guardamos en el estado
+    props.setData(recetasFiltradas);
+
+    // nos vamos al home
+    navegar("/")
+  }
 
   return (
     <div>
@@ -22,24 +37,24 @@ export const ItemDetails = () => {
             <h1>{recetaSeleccionada.titulo} </h1>
             <h3>tipo de plato: {recetaSeleccionada.tipo_de_plato}</h3>
             <div className="contenedor-span">
-              <span><b>Tiempo de preparación:</b>  {recetaSeleccionada.tiempo_de_preparacion}</span>
-              <span><b>Porciones:</b> {recetaSeleccionada.porciones}</span>
-              <span><b>Dificultad:</b> {recetaSeleccionada.dificultad}</span>
+              <span>
+                <b>Tiempo de preparación:</b>{" "}
+                {recetaSeleccionada.tiempo_de_preparacion}
+              </span>
+              <span>
+                <b>Porciones:</b> {recetaSeleccionada.porciones}
+              </span>
+              <span>
+                <b>Dificultad:</b> {recetaSeleccionada.dificultad}
+              </span>
             </div>
-            <p>
-           {recetaSeleccionada.elaboracion}
-            </p>
+            <p>{recetaSeleccionada.elaboracion}</p>
 
             <h3>Ingredientes</h3>
-            <ul> 
-            {recetaSeleccionada.ingredientes.map((cadaIngrediente, index) => {
-            return (
-              <li key={index}>
-                {cadaIngrediente}
-                
-              </li>
-            );
-          })}
+            <ul>
+              {recetaSeleccionada.ingredientes.map((cadaIngrediente, index) => {
+                return <li key={index}>{cadaIngrediente}</li>;
+              })}
             </ul>
           </div>
 
@@ -49,9 +64,15 @@ export const ItemDetails = () => {
               src={recetaSeleccionada.imagen}
               alt="food"
             />
+            <Link to={`/formularioEditarReceta/${recetaSeleccionada.id}`}>
+              <button className="boton-editar">Editar</button>
+            </Link>
+
+
+            <button className="boton-borrar" onClick={handleEliminarReceta}>Borrar</button>
           </div>
         </div>
       )}
-    </div>
+      </div>
   );
 };
