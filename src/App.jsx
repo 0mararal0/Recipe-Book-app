@@ -8,6 +8,7 @@ import { About } from "./pages/About";
 import { ItemDetails } from "./pages/ItemDetails";
 import { NotFound } from "./pages/NotFound";
 import { FormularioEditarReceta } from "./components/FomularioEditarReceta/FormularioEditarReceta";
+import CrearReceta from "./pages/CrearRecetas";
 
 /* import { Navbar } from "./components/Navbar/Navbar";
 import { Footer } from "./components/Footer/Footer";
@@ -31,6 +32,7 @@ function App() {
         element={<FormularioEditarReceta data={data} setData={setData} />}
       />
       <Route path={"*"} element={<NotFound />} />
+      <Route path="/crear-receta" element={<CrearReceta setData={setData} />} />
     </Routes>
   );
 }

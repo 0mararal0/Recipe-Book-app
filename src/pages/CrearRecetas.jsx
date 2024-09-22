@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function CrearReceta({ setData }) {
   const [titulo, setTitulo] = useState("");
@@ -9,6 +10,8 @@ function CrearReceta({ setData }) {
   const [elaboracion, setElaboracion] = useState("");
   const [ingredientes, setIngredientes] = useState([]);
   const [imagen, setImagen] = useState("");
+
+  const navigate = useNavigate(); //con esto volvemos a home
 
   const handleTituloChange = (event) => setTitulo(event.target.value);
   const handleTipoDePlatoChange = (event) => setTipoDePlato(event.target.value);
@@ -23,7 +26,7 @@ function CrearReceta({ setData }) {
     event.preventDefault();
 
     const nuevaReceta = {
-      id: Date.now(), // Generar un id único
+      id: Date.now(), // id único basado en el tiempo en milisegundos
       titulo,
       tipo_de_plato: tipoDePlato,
       tiempo_de_preparacion: tiempoDePreparacion,
@@ -36,7 +39,7 @@ function CrearReceta({ setData }) {
 
     setData((recetasActuales) => [nuevaReceta, ...recetasActuales]);
 
-    // Limpiar el formulario después de añadir la receta
+
     setTitulo("");
     setTipoDePlato("");
     setTiempoDePreparacion("");
@@ -45,6 +48,8 @@ function CrearReceta({ setData }) {
     setElaboracion("");
     setIngredientes([]);
     setImagen("");
+
+    navigate("/") //aquí es donde uso la función para volver a home
   };
 
   return (
