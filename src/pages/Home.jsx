@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Navbar } from "../components/Navbar/Navbar";
+
 import recipes from "../assets/data.json"; //nuevo archivo de datos, podemos cambiar recipes a datos o lista de datos
+
 import { Recetas } from "../components/Recetas/Recetas";
 import { Sidebar } from "../components/Sidebar/Sidebar";
 import { Footer } from "../components/Footer/Footer";
@@ -10,6 +12,7 @@ import iconComida from "../assets/images/iconComida.png";
 
 let dataInitial = recipes.slice(0).splice(0, 7);
 
+
 export const Home = () => {
   const [data, setData] = useState(recipes);
   const [showData, setShowData] = useState([]);
@@ -18,6 +21,10 @@ export const Home = () => {
   const handleAdd = () => {
     setCountCard(countCard + 8);
   };
+
+
+//export const Home = (props) => {
+  
 
   return (
     <div className="containerHome">
@@ -47,15 +54,23 @@ export const Home = () => {
       <div className="side-recetas">
         {/* <Sidebar /> */}
         <div className="recetasGaleria">
+
           {data.slice(0, countCard).map((receta, index) => {
+
+         // {props.data.map((receta, index) => {
+
             return (
               <div key={index}>
                 <Link to={`/itemDetails/${receta.id}`}>
                   <Recetas
                     receta={receta}
-                    setData={setData}
+                    setData={props.setData}
                     index={index}
+
                     data={data} //nuevo archivo de datos
+
+                   // data={props.data}//nuevo archivo de datos
+
                   />
                 </Link>
               </div>
