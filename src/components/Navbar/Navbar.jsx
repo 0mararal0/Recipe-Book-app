@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-
     <div className="containerNavbar">
       <div className="contentNavbar">
         <div className="containerLogoNavbar">
@@ -32,15 +31,15 @@ export const Navbar = () => {
           </div>
         </Link>
 
-  //  <div>
-     // <div className="containerNavbar">
-       // <img src={logo} alt="logo" />
-       // <h1>Recetas</h1>
-       // <Link to="/crear-receta">
-       // <button className="crear-receta-btn">Crear Receta</button>
-     // </Link> 
-
-    //  </div>
- //   </div>
+        {/* <div>
+     <div className="containerNavbar">
+        <img src={logo} alt="logo" />
+        <h1>Recetas</h1>
+        <Link to="/crear-receta">
+        <button className="crear-receta-btn">Crear Receta</button>
+      </Link> 
+*/}
+      </div>
+    </div>
   );
 };
