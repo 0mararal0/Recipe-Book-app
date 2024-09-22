@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Navbar } from "../components/Navbar/Navbar";
-import recipes from "../assets/recipes.json";
+import recipes from "../assets/data.json";//nuevo archivo de datos, podemos cambiar recipes a datos o lista de datos
 import { Recetas } from "../components/Recetas/Recetas";
 import { Sidebar } from "../components/Sidebar/Sidebar";
 import { Footer } from "../components/Footer/Footer";
@@ -24,7 +24,7 @@ export const Home = () => {
                     receta={receta}
                     setData={setData}
                     index={index}
-                    data={data}
+                    data={data}//nuevo archivo de datos
                   />
                 </Link>
               </div>
