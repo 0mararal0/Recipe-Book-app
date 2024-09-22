@@ -1,5 +1,5 @@
 import React from "react";
-import recipes from "../assets/recipes.json";
+import recipes from "../assets/data.json";
 import { useParams } from "react-router-dom";
 import "./ItemDetails.css";
 
@@ -7,7 +7,8 @@ export const ItemDetails = () => {
   const parametrosDinamicos = useParams();
 
   const recetaSeleccionada = recipes.find((eachReceta) => {
-    return eachReceta.id === parametrosDinamicos.recipe;
+    const identificadorReceta = parseInt(parametrosDinamicos.recipe)//para cambiar recipe que es cadena a número que es nuestro id
+    return eachReceta.id === identificadorReceta;
   });
 
   return (
@@ -18,35 +19,34 @@ export const ItemDetails = () => {
       ) : (
         <div className="contenedor">
           <div>
-            <h1>{recetaSeleccionada.name} </h1>
+            <h1>{recetaSeleccionada.titulo} </h1>
+            <h3>tipo de plato: {recetaSeleccionada.tipo_de_plato}</h3>
             <div className="contenedor-span">
-              <span><b>Calorías:</b>  {recetaSeleccionada.calories}</span>
-              <span><b>Porciones:</b> {recetaSeleccionada.servings}</span>
+              <span><b>Tiempo de preparación:</b>  {recetaSeleccionada.tiempo_de_preparacion}</span>
+              <span><b>Porciones:</b> {recetaSeleccionada.porciones}</span>
+              <span><b>Dificultad:</b> {recetaSeleccionada.dificultad}</span>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+           {recetaSeleccionada.elaboracion}
             </p>
 
             <h3>Ingredientes</h3>
-            <ul>
-              <li>Lorem ipsum </li>
-              <li>Lorem ipsum </li>
-              <li>Lorem ipsum </li>
-              <li>Lorem ipsum </li>
-              <li>Lorem ipsum </li>
+            <ul> 
+            {recetaSeleccionada.ingredientes.map((cadaIngrediente, index) => {
+            return (
+              <li key={index}>
+                {cadaIngrediente}
+                
+              </li>
+            );
+          })}
             </ul>
           </div>
 
           <div>
             <img
               className="recetasImagenes"
-              src={recetaSeleccionada.image}
+              src={recetaSeleccionada.imagen}
               alt="food"
             />
           </div>
