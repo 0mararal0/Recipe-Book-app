@@ -1,16 +1,30 @@
 import React from "react";
-import recipes from "../assets/data.json";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./ItemDetails.css";
 import { Link } from "react-router-dom";
 
-export const ItemDetails = () => {
+export const ItemDetails = (props) => {
+  let navegar = useNavigate();
   const parametrosDinamicos = useParams();
+  const identificadorReceta = parseInt(parametrosDinamicos.recipe); //para cambiar recipe que es cadena a número que es nuestro id
 
-  const recetaSeleccionada = recipes.find((eachReceta) => {
-    const identificadorReceta = parseInt(parametrosDinamicos.recipe); //para cambiar recipe que es cadena a número que es nuestro id
+  const recetaSeleccionada = props.data.find((eachReceta) => {
     return eachReceta.id === identificadorReceta;
   });
+
+
+  const handleEliminarReceta = (event) => {
+    // lista de recetas sin la receta que estamos viendo
+    let recetasFiltradas = props.data.filter((cadaReceta) => {
+      return cadaReceta.id !== identificadorReceta;
+    });
+
+    // guardamos en el estado
+    props.setData(recetasFiltradas);
+
+    // nos vamos al home
+    navegar("/")
+  }
 
   return (
     <div>
@@ -53,9 +67,12 @@ export const ItemDetails = () => {
             <Link to={`/formularioEditarReceta/${recetaSeleccionada.id}`}>
               <button className="boton-editar">Editar</button>
             </Link>
+
+
+            <button className="boton-borrar" onClick={handleEliminarReceta}>Borrar</button>
           </div>
         </div>
       )}
-    </div>
+      </div>
   );
 };
