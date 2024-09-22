@@ -31,6 +31,7 @@ export const Navbar = () => {
           </div>
         </Link>
 
+
         {/* <div>
      <div className="containerNavbar">
         <img src={logo} alt="logo" />
@@ -41,5 +42,6 @@ export const Navbar = () => {
 */}
       </div>
     </div>
+
   );
 };

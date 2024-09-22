@@ -23,8 +23,10 @@ function App() {
     <Routes>
       <Route path={"/"} element={<Home data={data} setData={setData} />} />
       <Route path="/about" element={<About />} />
+
       <Route path={"/favoritesRecipes"} element={<FavoriteRecipes />} />
       <Route path="/createRecipe" element={<CrearReceta setData={setData} />} />
+
       <Route
         path={"/itemDetails/:recipe"}
         element={<ItemDetails data={data} setData={setData} />}
@@ -34,6 +36,7 @@ function App() {
         element={<FormularioEditarReceta data={data} setData={setData} />}
       />
       <Route path={"*"} element={<NotFound />} />
+
     </Routes>
   );
 }

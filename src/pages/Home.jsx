@@ -9,10 +9,13 @@ import { Footer } from "../components/Footer/Footer";
 import "./styleHome.css";
 import { Link } from "react-router-dom";
 import iconComida from "../assets/images/iconComida.png";
+import { useState } from "react";
+
 
 export const Home = ({ data, setData }) => {
   // const [data, setData] = useState(recipes);
   // const [showData, setShowData] = useState([]);
+
   const [countCard, setCountCard] = useState(8);
 
   const handleAdd = () => {
@@ -74,8 +77,10 @@ export const Home = ({ data, setData }) => {
       <div className="side-recetas">
         {/* <Sidebar /> */}
         <div className="recetasGaleria">
+
           {data.slice(0, countCard).map((receta, index) => {
             // {props.data.map((receta, index) => {
+
 
             return (
               <div key={index}>
@@ -84,7 +89,9 @@ export const Home = ({ data, setData }) => {
                     receta={receta}
                     //setData={props.setData}
                     index={index}
+
                     data={data} //nuevo archivo de datos
+
 
                     // data={props.data}//nuevo archivo de datos
                   />
