@@ -41,6 +41,11 @@ export const Navbar = () => {
       </Link> 
 */}
       </div>
+      <div className="crearBtn">
+          <Link to="/crear-receta">
+            <button className="crear-receta-btn">Crear Receta</button>
+          </Link>
+        </div>
     </div>
 
   );

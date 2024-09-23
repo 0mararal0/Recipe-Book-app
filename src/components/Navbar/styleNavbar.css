@@ -7,6 +7,7 @@
   padding-inline: 0px;
   background-color: #fffaea;
   display: flex;
+
   align-items: center;
   justify-content: space-between;
   font-family: "nunito";
@@ -50,4 +51,21 @@
 .containerCreateRecipe:hover {
   background-color: #f5df95;
   font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.crear-receta-btn {
+  border-radius: 20px;
+  border: 0.5px solid black;
+  height: 35px;
+  background-color: rgb(254, 238, 218);
+  margin-right: 15px;
+}
+
+.crear-receta-btn:hover {
+  background-color: rgb(165, 67, 42);
 }

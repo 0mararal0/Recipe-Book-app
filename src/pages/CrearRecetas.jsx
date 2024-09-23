@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./crearStyle.css"
 
 function CrearReceta({ setData }) {
   const [titulo, setTitulo] = useState("");
@@ -54,7 +55,7 @@ function CrearReceta({ setData }) {
 
   return (
     <div className="crear-receta-form">
-      <h2>Crear Nueva Receta</h2>
+      <h2>Crear nueva receta 🍽️ </h2>
 
       <form onSubmit={handleAddReceta}>
         <div>
@@ -65,7 +66,7 @@ function CrearReceta({ setData }) {
             type="text"
             name="titulo"
             required
-          />
+            />
         </div>
 
         <div>
@@ -76,7 +77,7 @@ function CrearReceta({ setData }) {
             type="text"
             name="tipoDePlato"
             required
-          />
+            />
         </div>
 
         <div>
@@ -87,7 +88,7 @@ function CrearReceta({ setData }) {
             type="text"
             name="tiempoDePreparacion"
             required
-          />
+            />
         </div>
 
         <div>
@@ -98,7 +99,7 @@ function CrearReceta({ setData }) {
             type="number"
             name="porciones"
             required
-          />
+            />
         </div>
 
         <div>
@@ -109,7 +110,7 @@ function CrearReceta({ setData }) {
             type="text"
             name="dificultad"
             required
-          />
+            />
         </div>
 
         <div>
@@ -119,7 +120,7 @@ function CrearReceta({ setData }) {
             value={elaboracion}
             name="elaboracion"
             required
-          ></textarea>
+            ></textarea>
         </div>
 
         <div>
@@ -130,7 +131,7 @@ function CrearReceta({ setData }) {
             type="text"
             name="ingredientes"
             required
-          />
+            />
         </div>
 
         <div>
@@ -141,7 +142,7 @@ function CrearReceta({ setData }) {
             type="text"
             name="imagen"
             required
-          />
+            />
         </div>
 
         <button type="submit">Agregar Receta</button>
