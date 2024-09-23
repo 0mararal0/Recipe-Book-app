@@ -1,9 +1,11 @@
 .containerHome {
-  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-family: "nunito";
+}
+.containerFavorito {
+  min-height: calc(100dvh - 255px);
 }
 .side-recetas {
   display: flex;
@@ -28,6 +30,11 @@
   margin-block: 10px;
   font-size: 1.5rem;
 }
+.containerTitleFavorito h3 {
+  font-size: 4rem;
+  margin-block: 10px;
+  font-family: "Choco";
+}
 .buttonSelect {
   display: flex;
   justify-content: center;
@@ -38,13 +45,16 @@
   width: 150px;
   border: 1px solid black;
   border-radius: 50px;
-  padding: 2px 20px;
+  padding: 10px 15px;
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: center;
   font-family: "nunito";
   font-size: 1.2rem;
+}
+.buttonSelect button p {
+  margin: 0;
 }
 .buttonEntrante {
   background-color: #ff5d28;
@@ -70,7 +80,7 @@
   width: 150px;
   border: 1px solid black;
   border-radius: 50px;
-  padding: 2px 20px;
+  padding: 10px 15px;
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -81,6 +91,9 @@
   margin-block: 20px;
   background-color: #a3c9aa;
   transition: 0.2s;
+}
+.buttonMostrarMas button p {
+  margin: 0;
 }
 
 .buttonEntrante:hover {

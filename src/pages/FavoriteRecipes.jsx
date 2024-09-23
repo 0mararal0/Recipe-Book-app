@@ -6,16 +6,21 @@ export const FavoriteRecipes = ({ data }) => {
 
   return (
     <>
-      <div>
-        {data
-          .filter((e) => e.favorito === 1)
-          .map((receta) => {
-            return (
-              <div key={receta.id}>
-                <Recetas receta={receta} data={data} />
-              </div>
-            );
-          })}
+      <div className="containerFavorito">
+        <div className="containerTitleFavorito">
+          <h3>Recetas Favoritas</h3>
+        </div>
+        <div className="recetasGaleria">
+          {data
+            .filter((e) => e.favorito === 1)
+            .map((receta) => {
+              return (
+                <div key={receta.id}>
+                  <Recetas receta={receta} data={data} />
+                </div>
+              );
+            })}
+        </div>
       </div>
     </>
   );

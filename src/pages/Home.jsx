@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Recetas } from "../components/Recetas/Recetas";
 import "./styleHome.css";
-import { Link } from "react-router-dom";
 import iconComida from "../assets/images/iconComida.png";
 
 export const Home = ({ data, setData }) => {
@@ -73,7 +72,6 @@ export const Home = ({ data, setData }) => {
           {showData.slice(0, countCard).map((receta, index) => {
             return (
               <div key={index}>
-                {receta.favorito === 1 ? <p>1</p> : <p>0</p>}
                 <Recetas
                   receta={receta}
                   index={index}

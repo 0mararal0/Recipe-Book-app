@@ -1,13 +1,11 @@
 .containerNavbar {
-  width: 100dvw;
+  background-color: bisque;
+  width: 99.8dvw;
 }
 .contentNavbar {
   max-width: 1280px;
-
   padding-inline: 0px;
-  background-color: #fffaea;
   display: flex;
-
   align-items: center;
   justify-content: space-between;
   font-family: "nunito";
@@ -15,7 +13,7 @@
 }
 .containerLogoNavbar {
   margin-inline: 20px;
-  margin-block: 10px;
+  margin-bottom: 10px;
 }
 .containerLogoNavbar img {
   width: 70px;
@@ -36,7 +34,7 @@
 }
 .containerCreateRecipe {
   border: 1px solid black;
-  padding: 2px 20px;
+  padding: 10px 15px;
   border-radius: 50px;
   margin-inline: 20px;
   margin-block: 10px;
@@ -44,8 +42,8 @@
 .containerCreateRecipe p {
   color: black;
   text-decoration: none;
-
   font-size: 1.2rem;
+  margin: 0;
 }
 
 .containerCreateRecipe:hover {
