@@ -1,18 +1,56 @@
 .containerNavbar {
-  margin: 0;
-  padding: 0;
-  background-color: bisque;
-
-  display: flex;
-  /* align-items: center; */
-  justify-content: space-between;
+  width: 100dvw;
 }
-.containerNavbar img {
+.contentNavbar {
+  max-width: 1280px;
+
+  padding-inline: 0px;
+  background-color: #fffaea;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  font-family: "nunito";
+  margin-inline: auto;
+}
+.containerLogoNavbar {
+  margin-inline: 20px;
+  margin-block: 10px;
+}
+.containerLogoNavbar img {
   width: 70px;
   height: 70px;
 }
-.containerNavbar h1 {
+.containerLogoNavbar h1 {
+  font-size: 1.4rem;
+  font-family: "choco";
+  margin: 0;
+}
+.containerLink {
   font-size: 1.2rem;
+  display: flex;
+  gap: 20px;
+}
+.containerLink p {
+  color: black;
+}
+.containerCreateRecipe {
+  border: 1px solid black;
+  padding: 2px 20px;
+  border-radius: 50px;
+  margin-inline: 20px;
+  margin-block: 10px;
+}
+.containerCreateRecipe p {
+  color: black;
+  text-decoration: none;
+
+  font-size: 1.2rem;
+}
+
+.containerCreateRecipe:hover {
+  background-color: #f5df95;
+  font-weight: bold;
 }
 
 .logo {

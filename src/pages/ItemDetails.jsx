@@ -12,7 +12,6 @@ export const ItemDetails = (props) => {
     return eachReceta.id === identificadorReceta;
   });
 
-
   const handleEliminarReceta = (event) => {
     // lista de recetas sin la receta que estamos viendo
     let recetasFiltradas = props.data.filter((cadaReceta) => {
@@ -23,8 +22,8 @@ export const ItemDetails = (props) => {
     props.setData(recetasFiltradas);
 
     // nos vamos al home
-    navegar("/")
-  }
+    navegar("/");
+  };
 
   return (
     <div>
@@ -64,15 +63,23 @@ export const ItemDetails = (props) => {
               src={recetaSeleccionada.imagen}
               alt="food"
             />
-            <Link to={`/formularioEditarReceta/${recetaSeleccionada.id}`}>
-              <button className="boton-editar">Editar</button>
-            </Link>
 
+            <div className="contenedor-botones">
+              <div className="contenedor-boton">
+                <Link to={`/formularioEditarReceta/${recetaSeleccionada.id}`}>
+                  <button className="boton-editar">Editar</button>
+                </Link>
+              </div>
 
-            <button className="boton-borrar" onClick={handleEliminarReceta}>Borrar</button>
+              <div className="contenedor-boton">
+                <button className="boton-borrar" onClick={handleEliminarReceta}>
+                  Borrar
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       )}
-      </div>
+    </div>
   );
 };

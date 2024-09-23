@@ -70,12 +70,12 @@ export function FormularioEditarReceta(props) {
     let recetaEditada = {
       id: recetaSeleccionada.id,
       titulo: titulo,
-      descripcion: descripcion,
+      elaboracion: descripcion,
       ingredientes: ingredientes,
       porciones: porciones,
       dificultad: dificultad,
-      tipo: tipo,
-      tiempo: tiempo,
+      tipo_de_plato: tipo,
+      tiempo_de_preparacion: tiempo,
       imagen: imagen,
     };
 
@@ -96,13 +96,13 @@ export function FormularioEditarReceta(props) {
   };
 
   return (
-    <div>
+    <div className="contenedor-formulario">
       {/* FORM */}
-      <form onSubmit={handleEditar}>
+      <form onSubmit={handleEditar} className="formulario">
         <h1>Editar receta</h1>
         <div>
           <label>
-            <div>Titulo</div>
+            <div>Título</div>
             <input
               value={titulo}
               onChange={handelTituloCambiar}
@@ -112,8 +112,65 @@ export function FormularioEditarReceta(props) {
             />
           </label>
 
+
+          <div className="contenedor-label-fila">
+            <label>
+              <div>Plato</div>
+              <select
+                name="nivel de dificultad"
+                value={tipo}
+                onChange={handelTipo}
+              >
+                <option value="Entrante">Entrante</option>
+                <option value="Principal">Principal</option>
+                <option value="Postre">Postre</option>
+              </select>
+            </label>
+
+            <label>
+              <div> Porciones </div>
+              <input
+                value={porciones}
+                onChange={handelPorcionesCambiar}
+                name="porciones"
+                type="text"
+                placeholder=""
+              />
+            </label>
+          </div>
+        </div>
+
+        <div className="contenedor-label-fila">
+
+        <label>
+            <div>Dificultad</div>
+            <select
+              name="nivel de dificultad"
+              value={dificultad}
+              onChange={handelDificultadCambiar}
+            >
+              <option value="Facil">Fácil</option>
+              <option value="Medio">Medio</option>
+              <option value="Dificil">Dificil</option>
+            </select>
+          </label>
+
           <label>
-            <div> Descripción</div>
+            <div> Tiempo de preparación </div>
+            <input
+              value={tiempo}
+              onChange={handelTiempo}
+              name="tiempo de preparación"
+              type="text"
+              placeholder=""
+            />
+          </label>
+
+        </div>
+
+        <div>
+          <label>
+            <div>Elaboración</div>
             <textarea
               value={descripcion}
               onChange={handelDescripcionCambiar}
@@ -133,56 +190,6 @@ export function FormularioEditarReceta(props) {
           </label>
 
           <label>
-            <div> Porciones </div>
-            <input
-              value={porciones}
-              onChange={handelPorcionesCambiar}
-              name="porciones"
-              type="text"
-              placeholder=""
-            />
-          </label>
-        </div>
-
-        <div>
-          <label>
-            <div>Dificultad</div>
-            <select
-              name="nivel de dificultad"
-              value={dificultad}
-              onChange={handelDificultadCambiar}
-            >
-              <option value="Facil">Fácil</option>
-              <option value="Medio">Medio</option>
-              <option value="Dificil">Dificil</option>
-            </select>
-          </label>
-
-          <label>
-            <div>Tipo de Plato</div>
-            <select
-              name="nivel de dificultad"
-              value={tipo}
-              onChange={handelTipo}
-            >
-              <option value="Entrante">Entrante</option>
-              <option value="Principal">Principal</option>
-              <option value="Postre">Postre</option>
-            </select>
-          </label>
-
-          <label>
-            <div> Tiempo de preparación </div>
-            <input
-              value={tiempo}
-              onChange={handelTiempo}
-              name="tiempo de preparación"
-              type="text"
-              placeholder=""
-            />
-          </label>
-
-          <label>
             <div> Imagen </div>
 
             <input
@@ -193,7 +200,8 @@ export function FormularioEditarReceta(props) {
               placeholder="Imagen del"
             />
           </label>
-
+        </div>
+        <div className="contenedor-boton">
           <button type="submit">Editar Receta</button>
         </div>
       </form>
