@@ -12,7 +12,7 @@
 .recetasGaleria {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 20px;
   justify-content: center;
   margin-block: 20px;
 }
@@ -48,15 +48,19 @@
 }
 .buttonEntrante {
   background-color: #ff5d28;
+  transition: 0.2s;
 }
 .buttonPrincipal {
   background-color: #98abee;
+  transition: 0.2s;
 }
 .buttonPostre {
   background-color: #ee99c2;
+  transition: 0.2s;
 }
 .buttonTodos {
   background-color: #a3c9aa;
+  transition: 0.2s;
 }
 .buttonSelect button img {
   width: 20px;
@@ -76,20 +80,31 @@
   margin-inline: auto;
   margin-block: 20px;
   background-color: #a3c9aa;
+  transition: 0.2s;
 }
 
 .buttonEntrante:hover {
   background-color: #e55424;
+  transition: 0.5s;
+  scale: 0.9;
 }
 .buttonPrincipal:hover {
   background-color: #8495d1;
+  transition: 0.5s;
+  scale: 0.9;
 }
 .buttonPostre:hover {
   background-color: #cd82a6;
+  transition: 0.5s;
+  scale: 0.9;
 }
 .buttonTodos:hover {
   background-color: #8daf93;
+  transition: 0.5s;
+  scale: 0.9;
 }
 .buttonMostrarMas button:hover {
   background-color: #8daf93;
+  transition: 0.5s;
+  scale: 0.9;
 }

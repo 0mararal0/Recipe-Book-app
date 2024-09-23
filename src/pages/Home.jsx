@@ -10,10 +10,9 @@ import "./styleHome.css";
 import { Link } from "react-router-dom";
 import iconComida from "../assets/images/iconComida.png";
 
-
 export const Home = ({ data, setData }) => {
   // const [data, setData] = useState(recipes);
-  // const [showData, setShowData] = useState([]);
+  const [showData, setShowData] = useState(data);
 
   const [countCard, setCountCard] = useState(8);
 
@@ -22,28 +21,32 @@ export const Home = ({ data, setData }) => {
   };
 
   const handleEntrante = () => {
-    setData(
+    setShowData(
       data.filter((elem) => {
         return elem.tipo_de_plato === "Entrante";
       })
     );
+    setCountCard(8);
   };
   const handlePrincipal = () => {
-    setData(
+    setShowData(
       data.filter((elem) => {
         return elem.tipo_de_plato === "Primer plato";
       })
     );
+    setCountCard(8);
   };
   const handlePostre = () => {
-    setData(
+    setShowData(
       data.filter((elem) => {
         return elem.tipo_de_plato === "Postre";
       })
     );
+    setCountCard(8);
   };
   const handleAll = () => {
-    setData(recipes);
+    setShowData(data);
+    setCountCard(8);
   };
 
   //export const Home = (props) => {
@@ -76,21 +79,20 @@ export const Home = ({ data, setData }) => {
       <div className="side-recetas">
         {/* <Sidebar /> */}
         <div className="recetasGaleria">
-
-          {data.slice(0, countCard).map((receta, index) => {
+          {showData.slice(0, countCard).map((receta, index) => {
             // {props.data.map((receta, index) => {
-
 
             return (
               <div key={index}>
-                <Link to={`/itemDetails/${receta.id}`}>
+                <Link
+                  to={`/itemDetails/${receta.id}`}
+                  style={{ textDecoration: "none" }}
+                >
                   <Recetas
                     receta={receta}
                     //setData={props.setData}
                     index={index}
-
                     data={data} //nuevo archivo de datos
-
 
                     // data={props.data}//nuevo archivo de datos
                   />
