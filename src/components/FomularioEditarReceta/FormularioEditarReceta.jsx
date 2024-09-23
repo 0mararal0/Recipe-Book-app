@@ -196,7 +196,7 @@ export function FormularioEditarReceta(props) {
         <div className="contenedor-botones">
           <div className="contenedor-boton">
             <Link  to={`/itemDetails/${recetaSeleccionada.id}`}>
-              <button className="boton-secundario">Cerrar</button>
+              <button className="boton-secundario">Cancelar</button>
             </Link>
           </div>
           <div className="contenedor-boton">

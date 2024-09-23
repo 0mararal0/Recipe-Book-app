@@ -100,9 +100,10 @@ select:focus {
     margin-top: 20px;
     padding: 12px 20px 12px 20px;
     width: 100px;
-    border-radius: 5px;
+    border-radius: 20px;
     border-width: 1px;
     background-color: #A3C9AA;
+    box-shadow: 2px 2px 5px #9daaa0;
 }
 
 .contenedor-boton button:hover {
@@ -125,4 +126,9 @@ button.boton-secundario {
 button.boton-secundario:hover {
     background-color: rgb(249, 250, 251);
     color: rgb(17, 24, 39);
+}
+
+
+button.boton-mas-ancho {
+    width: 130px;
 }
