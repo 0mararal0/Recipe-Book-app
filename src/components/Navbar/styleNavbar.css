@@ -4,7 +4,8 @@
   background-color: bisque;
 
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  justify-content: space-between;
 }
 .containerNavbar img {
   width: 70px;
@@ -12,4 +13,21 @@
 }
 .containerNavbar h1 {
   font-size: 1.2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.crear-receta-btn {
+  border-radius: 20px;
+  border: 0.5px solid black;
+  height: 35px;
+  background-color: rgb(254, 238, 218);
+  margin-right: 15px;
+}
+
+.crear-receta-btn:hover {
+  background-color: rgb(165, 67, 42);
 }

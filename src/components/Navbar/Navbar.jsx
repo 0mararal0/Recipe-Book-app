@@ -6,14 +6,16 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <div>
-      <div className="containerNavbar">
+    <div className="containerNavbar">
+      <div className="logo">
         <img src={logo} alt="logo" />
         <h1>Recetas</h1>
-        <Link to="/crear-receta">
-        <button className="crear-receta-btn">Crear Receta</button>
-      </Link> 
       </div>
+      <div className="crearBtn">
+          <Link to="/crear-receta">
+            <button className="crear-receta-btn">Crear Receta</button>
+          </Link>
+        </div>
     </div>
   );
 };
