@@ -1,27 +1,38 @@
 .comida {
   border: 2px solid rgb(146, 145, 145);
-  box-shadow: 5px 5px 10px rgb(128, 128, 128);
-  border-radius: 20px;
+  box-shadow: 0px 10px 0px rgb(74, 72, 72), 5px 5px 10px rgb(128, 128, 128);
+  border-radius: 50px 20px;
   padding: 10px;
   background-color: aliceblue;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.2s;
+  margin-block: 10px;
 }
 
 .comida img {
-  width: 150px;
+  width: 190px;
   height: 100px;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 50px 20px 20px 20px;
 }
-.comida button {
-  background: rgb(231, 13, 89);
-  background: radial-gradient(
-    circle,
-    rgba(231, 13, 89, 1) 13%,
-    rgba(177, 59, 227, 1) 88%,
-    rgba(161, 67, 233, 1) 97%,
-    rgba(62, 241, 165, 1) 100%
-  );
-  color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
+.comida h2 {
+  color: black;
+}
+.comida:hover {
+  border: 2px solid rgb(146, 145, 145);
+  box-shadow: 0px 10px 0px rgb(74, 72, 72), 5px 5px 10px rgb(128, 128, 128);
+  border-radius: 50px 20px;
+  padding: 10px;
+  background-color: aliceblue;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  scale: 1.1;
+  transition: 0.5s;
 }
