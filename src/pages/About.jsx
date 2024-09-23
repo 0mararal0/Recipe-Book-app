@@ -5,13 +5,14 @@ import { Link } from "react-router-dom";
 export const About = () => {
   return (
     <div className="about-container">
+      <div className="display">
       <header className="about-header">
         <h1>Sobre nosotros</h1>
       </header>
       <section className="about-content">
         <h2>Nuestra Historia</h2>
         <p>
-          Bienvenido a <strong>(nombre que pongamos)</strong>, tu página
+          Bienvenido a <strong>El rincón del chef</strong>, tu página
           favorita de recetas caseras. Desde nuestro inicio en 2024, nos hemos
           dedicado a compartir la pasión por la buena comida.
         </p>
@@ -41,8 +42,9 @@ export const About = () => {
         </ul>
       </section>
       <footer className="about-footer">
-        <p>&copy; 2024 (Recetas). Todos los derechos reservados.</p>
+        <p>&copy; 2024 El rincón del chef. Todos los derechos reservados.</p>
       </footer>
+      </div>
     </div>
   );
 };

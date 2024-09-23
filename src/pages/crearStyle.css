@@ -39,7 +39,7 @@ label {
   gap: 10px;
 }
 
-input{
+input {
   border-radius: 5px;
   min-width: 400px;
   min-height: 20px;
@@ -86,13 +86,11 @@ select:focus {
   outline: none;
 }
 
-
 .contenedor-boton {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-
 
 .contenedor-boton button {
   margin-top: 20px;
