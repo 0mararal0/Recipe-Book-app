@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./crearStyle.css"
+import "./crearStyle.css";
+import { Link } from "react-router-dom";
 
 function CrearReceta({ setData }) {
   const [titulo, setTitulo] = useState("");
@@ -16,11 +17,13 @@ function CrearReceta({ setData }) {
 
   const handleTituloChange = (event) => setTitulo(event.target.value);
   const handleTipoDePlatoChange = (event) => setTipoDePlato(event.target.value);
-  const handleTiempoDePreparacionChange = (event) => setTiempoDePreparacion(event.target.value);
+  const handleTiempoDePreparacionChange = (event) =>
+    setTiempoDePreparacion(event.target.value);
   const handlePorcionesChange = (event) => setPorciones(event.target.value);
   const handleDificultadChange = (event) => setDificultad(event.target.value);
   const handleElaboracionChange = (event) => setElaboracion(event.target.value);
-  const handleIngredientesChange = (event) => setIngredientes(event.target.value.split(","));
+  const handleIngredientesChange = (event) =>
+    setIngredientes(event.target.value.split(","));
   const handleImagenChange = (event) => setImagen(event.target.value);
 
   const handleAddReceta = (event) => {
@@ -40,7 +43,6 @@ function CrearReceta({ setData }) {
 
     setData((recetasActuales) => [nuevaReceta, ...recetasActuales]);
 
-
     setTitulo("");
     setTipoDePlato("");
     setTiempoDePreparacion("");
@@ -50,81 +52,99 @@ function CrearReceta({ setData }) {
     setIngredientes([]);
     setImagen("");
 
-    navigate("/") //aquí es donde uso la función para volver a home
+    navigate("/"); //aquí es donde uso la función para volver a home
   };
 
   return (
     <div className="crear-receta-form">
-      <h2>Crear nueva receta 🍽️ </h2>
 
-      <form onSubmit={handleAddReceta}>
+      <form onSubmit={handleAddReceta} className="formulario">
+      <h1>Crear nueva receta 🍽️ </h1>
         <div>
-          <label className="titulo">Título: </label>
+          <label className="titulo"></label>
+          <div>Título</div>
           <input
             onChange={handleTituloChange}
             value={titulo}
             type="text"
             name="titulo"
             required
-            />
+          />
         </div>
 
-        <div>
-          <label className="tipoDePlato">Tipo de Plato: </label>
-          <input
+        <div className="contenedor-label-fila">
+          <label>
+            <div>Plato</div>
+          <select
             onChange={handleTipoDePlatoChange}
             value={tipoDePlato}
             type="text"
             name="tipoDePlato"
             required
-            />
-        </div>
+          >
+            <option value="Entrante">Entrante</option>
+            <option value="Principal">Principal</option>
+            <option value="Postre">Postre</option>
+          </select>
+          </label>
 
-        <div>
-          <label className="tiempoDePreparacion">Tiempo de Preparación: </label>
-          <input
-            onChange={handleTiempoDePreparacionChange}
-            value={tiempoDePreparacion}
-            type="text"
-            name="tiempoDePreparacion"
-            required
-            />
-        </div>
-
-        <div>
-          <label className="porciones">Porciones: </label>
+          <label className="porciones">
+            <div>Porciones</div> 
           <input
             onChange={handlePorcionesChange}
             value={porciones}
             type="number"
             name="porciones"
             required
-            />
-        </div>
+          />
+          </label>
+          </div>
 
-        <div>
-          <label className="dificultad">Dificultad: </label>
-          <input
+          <div className="contenedor-label-fila">
+
+          <label className="dificultad">
+            <div>Dificultad</div> 
+          <select
             onChange={handleDificultadChange}
             value={dificultad}
             type="text"
             name="dificultad"
             required
-            />
-        </div>
+          >
+            <option value="Facil">Fácil</option>
+            <option value="Medio">Medio</option>
+            <option value="Dificil">Dificil</option>
+          </select>
+          </label>
+
+          <label className="tiempoDePreparacion">
+            <div>Tiempo de Preparación</div>
+          <input
+            onChange={handleTiempoDePreparacionChange}
+            value={tiempoDePreparacion}
+            type="text"
+            name="tiempoDePreparacion"
+            required
+          />
+          </label>
+
+          </div>
+
 
         <div>
-          <label className="elaboracion">Elaboración: </label>
+          <label className="elaboracion">
+            <div>Elaboración</div> 
           <textarea
             onChange={handleElaboracionChange}
             value={elaboracion}
             name="elaboracion"
             required
-            ></textarea>
-        </div>
+          ></textarea>
+          </label>
 
-        <div>
-          <label className="ingredientes">Ingredientes (separados por comas): </label>
+        
+          <label className="ingredientes">
+            <div>Ingredientes</div>
           <input
             onChange={handleIngredientesChange}
             value={ingredientes.join(",")}
@@ -132,10 +152,10 @@ function CrearReceta({ setData }) {
             name="ingredientes"
             required
             />
-        </div>
+            </label>
 
-        <div>
-          <label className="imagen">URL de la Imagen: </label>
+          <label className="imagen">
+            <div>Imagen</div> 
           <input
             onChange={handleImagenChange}
             value={imagen}
@@ -143,9 +163,16 @@ function CrearReceta({ setData }) {
             name="imagen"
             required
             />
-        </div>
+            </label>
+            </div>
+            <div className="contenedor-boton">
+        <button type="submit"  className="boton2">Agregar Receta</button>
 
-        <button type="submit">Agregar Receta</button>
+          <Link to={"/"}>
+            <button>Borrar receta</button>
+          </Link>
+
+        </div>
       </form>
     </div>
   );
