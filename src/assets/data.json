@@ -16,7 +16,8 @@
     "tipo_de_plato": "Entrante",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "20 minutos",
-    "imagen": "https://images.cookforyourlife.org/wp-content/uploads/2018/08/Quinoa-Tabbouleh-Salad-e1643842744790.jpg"
+    "imagen": "https://images.cookforyourlife.org/wp-content/uploads/2018/08/Quinoa-Tabbouleh-Salad-e1643842744790.jpg",
+    "favorito": 0
   },
   {
     "id": 2,
@@ -33,7 +34,8 @@
     "tipo_de_plato": "Primer plato",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "30 minutos",
-    "imagen": "https://t1.uc.ltmcdn.com/es/posts/3/0/9/como_hacer_sopa_de_tomate_casera_25903_orig.jpg"
+    "imagen": "https://t1.uc.ltmcdn.com/es/posts/3/0/9/como_hacer_sopa_de_tomate_casera_25903_orig.jpg",
+    "favorito": 0
   },
   {
     "id": 3,
@@ -51,7 +53,8 @@
     "tipo_de_plato": "Segundo plato",
     "dificultad": "Media",
     "tiempo_de_preparacion": "45 minutos",
-    "imagen": "https://media.istockphoto.com/id/1170729895/es/foto/mantequilla-india-pollo-horizontal-foto.jpg?s=612x612&w=0&k=20&c=MEjN4QtZbDc4sZu0NCQG0RbHV7_6HEgH8qmiXaArusg="
+    "imagen": "https://media.istockphoto.com/id/1170729895/es/foto/mantequilla-india-pollo-horizontal-foto.jpg?s=612x612&w=0&k=20&c=MEjN4QtZbDc4sZu0NCQG0RbHV7_6HEgH8qmiXaArusg=",
+    "favorito": 0
   },
   {
     "id": 4,
@@ -69,7 +72,8 @@
     "tipo_de_plato": "Guarnición",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "30 minutos",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LH39hLwTvT2NZoeVTIcn-Y8n2ag1w0aXXQ&s"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LH39hLwTvT2NZoeVTIcn-Y8n2ag1w0aXXQ&s",
+    "favorito": 0
   },
   {
     "id": 5,
@@ -80,7 +84,8 @@
     "tipo_de_plato": "Postre",
     "dificultad": "Media",
     "tiempo_de_preparacion": "1 hora",
-    "imagen": "https://www.laespanolaaceites.com/wp-content/uploads/2019/06/tarta-de-bizcocho-con-manzana-1080x671.jpg"
+    "imagen": "https://www.laespanolaaceites.com/wp-content/uploads/2019/06/tarta-de-bizcocho-con-manzana-1080x671.jpg",
+    "favorito": 0
   },
   {
     "id": 6,
@@ -99,7 +104,8 @@
     "tipo_de_plato": "Entrante",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "15 minutos",
-    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2018/06/01/5e99784964d1d.jpeg"
+    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2018/06/01/5e99784964d1d.jpeg",
+    "favorito": 0
   },
   {
     "id": 7,
@@ -119,7 +125,8 @@
     "tipo_de_plato": "Segundo plato",
     "dificultad": "Media",
     "tiempo_de_preparacion": "1 hora y 30 minutos",
-    "imagen": "https://www.paulinacocina.net/wp-content/uploads/2023/09/paella-valenciana-tradicional.jpg"
+    "imagen": "https://www.paulinacocina.net/wp-content/uploads/2023/09/paella-valenciana-tradicional.jpg",
+    "favorito": 0
   },
   {
     "id": 8,
@@ -130,7 +137,8 @@
     "tipo_de_plato": "Primer plato",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "40 minutos",
-    "imagen": "https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2022/07/11/fotografia-de-una-tortilla-de-patata.jpeg"
+    "imagen": "https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2022/07/11/fotografia-de-una-tortilla-de-patata.jpeg",
+    "favorito": 0
   },
   {
     "id": 9,
@@ -148,7 +156,8 @@
     "tipo_de_plato": "Entrante",
     "dificultad": "Media",
     "tiempo_de_preparacion": "1 hora",
-    "imagen": "https://www.hola.com/horizon/landscape/f88ad2ad40be-croquetas-de-jamon-t.jpg"
+    "imagen": "https://www.hola.com/horizon/landscape/f88ad2ad40be-croquetas-de-jamon-t.jpg",
+    "favorito": 0
   },
   {
     "id": 10,
@@ -159,7 +168,8 @@
     "tipo_de_plato": "Postre",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "1 hora y 15 minutos",
-    "imagen": "https://i.pinimg.com/736x/0b/79/44/0b7944d1830da683504e05fe692a698b.jpgg"
+    "imagen": "https://i.pinimg.com/736x/0b/79/44/0b7944d1830da683504e05fe692a698b.jpgg",
+    "favorito": 0
   },
   {
     "id": 11,
@@ -178,7 +188,8 @@
     "tipo_de_plato": "Entrante",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "20 minutos",
-    "imagen": "https://www.aceitesdeolivadeespana.com/wp-content/uploads/2024/04/salmorejo_jamon_iberico.jpeg"
+    "imagen": "https://www.aceitesdeolivadeespana.com/wp-content/uploads/2024/04/salmorejo_jamon_iberico.jpeg",
+    "favorito": 0
   },
   {
     "id": 12,
@@ -197,7 +208,8 @@
     "tipo_de_plato": "Primer plato",
     "dificultad": "Media",
     "tiempo_de_preparacion": "2 horas",
-    "imagen": "https://www.aceitesdeolivadeespana.com/wp-content/uploads/2023/01/AdobeStock_319493286-1.jpeg"
+    "imagen": "https://www.aceitesdeolivadeespana.com/wp-content/uploads/2023/01/AdobeStock_319493286-1.jpeg",
+    "favorito": 0
   },
   {
     "id": 13,
@@ -218,7 +230,8 @@
     "tipo_de_plato": "Segundo plato",
     "dificultad": "Difícil",
     "tiempo_de_preparacion": "3 horas",
-    "imagen": "https://canalcocina.es/medias/images/0001052181EscuelaCanalCocinaS01E004CocidoMadrilenoHR0101.jpg"
+    "imagen": "https://canalcocina.es/medias/images/0001052181EscuelaCanalCocinaS01E004CocidoMadrilenoHR0101.jpg",
+    "favorito": 0
   },
   {
     "id": 14,
@@ -237,7 +250,8 @@
     "tipo_de_plato": "Segundo plato",
     "dificultad": "Media",
     "tiempo_de_preparacion": "1 hora y 30 minutos",
-    "imagen": "https://lapalmerarosa.com/wp-content/uploads/2019/11/pimientos-rellenos-de-carne-6.jpg"
+    "imagen": "https://lapalmerarosa.com/wp-content/uploads/2019/11/pimientos-rellenos-de-carne-6.jpg",
+    "favorito": 0
   },
   {
     "id": 15,
@@ -248,7 +262,8 @@
     "tipo_de_plato": "Postre",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "30 minutos",
-    "imagen": "https://sivarious.com/wp-content/uploads/2020/12/natillas-caseras.jpg"
+    "imagen": "https://sivarious.com/wp-content/uploads/2020/12/natillas-caseras.jpg",
+    "favorito": 0
   },
   {
     "id": 16,
@@ -265,7 +280,8 @@
     "tipo_de_plato": "Entrante",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "20 minutos",
-    "imagen": "https://t1.uc.ltmcdn.com/es/posts/0/3/0/como_hacer_calamares_a_la_romana_52030_orig.jpg"
+    "imagen": "https://t1.uc.ltmcdn.com/es/posts/0/3/0/como_hacer_calamares_a_la_romana_52030_orig.jpg",
+    "favorito": 0
   },
   {
     "id": 17,
@@ -283,7 +299,8 @@
     "tipo_de_plato": "Primer plato",
     "dificultad": "Media",
     "tiempo_de_preparacion": "1 hora y 30 minutos",
-    "imagen": "https://realacademiadegastronomia.com/wp-content/uploads/2021/05/Gazpachos-manchegos-o-galianos-BAJA-1024x768.jpg"
+    "imagen": "https://realacademiadegastronomia.com/wp-content/uploads/2021/05/Gazpachos-manchegos-o-galianos-BAJA-1024x768.jpg",
+    "favorito": 0
   },
   {
     "id": 18,
@@ -300,7 +317,8 @@
     "tipo_de_plato": "Segundo plato",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "40 minutos",
-    "imagen": "https://i.ytimg.com/vi/7MB9eROtapI/maxresdefault.jpg"
+    "imagen": "https://i.ytimg.com/vi/7MB9eROtapI/maxresdefault.jpg",
+    "favorito": 0
   },
   {
     "id": 19,
@@ -318,7 +336,8 @@
     "tipo_de_plato": "Entrante",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "30 minutos",
-    "imagen": "https://thecookinglab.es/wp-content/uploads/2014/02/patatas-bravas-receta.jpg"
+    "imagen": "https://thecookinglab.es/wp-content/uploads/2014/02/patatas-bravas-receta.jpg",
+    "favorito": 0
   },
   {
     "id": 20,
@@ -329,7 +348,8 @@
     "tipo_de_plato": "Postre",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "1 hora",
-    "imagen": "https://peopleenespanol.com/thmb/O4bAeAl5OXtRrGPmtCsHh4UpzDM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/recetas-1092-arroz-con-leche-2000-ac1485846508488e8da95f5f9c8de793.jpg"
+    "imagen": "https://peopleenespanol.com/thmb/O4bAeAl5OXtRrGPmtCsHh4UpzDM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/recetas-1092-arroz-con-leche-2000-ac1485846508488e8da95f5f9c8de793.jpg",
+    "favorito": 0
   },
   {
     "id": 21,
@@ -346,7 +366,8 @@
     "tipo_de_plato": "Segundo plato",
     "dificultad": "Media",
     "tiempo_de_preparacion": "1 hora y 30 minutos",
-    "imagen": "https://lacocinadefrabisa.lavozdegalicia.es/wp-content/uploads/2021/04/empanada-zorza-bis.jpg"
+    "imagen": "https://lacocinadefrabisa.lavozdegalicia.es/wp-content/uploads/2021/04/empanada-zorza-bis.jpg",
+    "favorito": 0
   },
   {
     "id": 22,
@@ -364,7 +385,8 @@
     "tipo_de_plato": "Guarnición",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "45 minutos",
-    "imagen": "https://www.hola.com/horizon/landscape/3de6cb943066-pisto-manchego-tradicional-t.jpg"
+    "imagen": "https://www.hola.com/horizon/landscape/3de6cb943066-pisto-manchego-tradicional-t.jpg",
+    "favorito": 0
   },
   {
     "id": 23,
@@ -375,7 +397,8 @@
     "tipo_de_plato": "Postre",
     "dificultad": "Media",
     "tiempo_de_preparacion": "30 minutos",
-    "imagen": "https://images.rappi.com.ar/products/307122558540_fbrblsxnaoqb_228346413933_icymdsntyfzcsc_7792590003617_1.jpg"
+    "imagen": "https://images.rappi.com.ar/products/307122558540_fbrblsxnaoqb_228346413933_icymdsntyfzcsc_7792590003617_1.jpg",
+    "favorito": 0
   },
   {
     "id": 24,
@@ -386,7 +409,8 @@
     "tipo_de_plato": "Segundo plato",
     "dificultad": "Media",
     "tiempo_de_preparacion": "1 hora",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYhBaPVW-mjzLnfaJ1UlDX6Rck8-DvyFFMyQ&s"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYhBaPVW-mjzLnfaJ1UlDX6Rck8-DvyFFMyQ&s",
+    "favorito": 0
   },
   {
     "id": 25,
@@ -397,7 +421,8 @@
     "tipo_de_plato": "Postre",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "1 hora",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRANuA-yOfF7x9I46OOp6kQG_chX77MzqXz6sRjnkWqFv7bCh4Ros29cwpQcaF3xn5nyHE&usqp=CAU"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRANuA-yOfF7x9I46OOp6kQG_chX77MzqXz6sRjnkWqFv7bCh4Ros29cwpQcaF3xn5nyHE&usqp=CAU",
+    "favorito": 0
   },
   {
     "id": 26,
@@ -415,7 +440,8 @@
     "tipo_de_plato": "Segundo plato",
     "dificultad": "Media",
     "tiempo_de_preparacion": "1 hora y 30 minutos",
-    "imagen": "https://www.solcatering.es/wp-content/uploads/2021/02/canalones-de-carne-gratinados.jpg"
+    "imagen": "https://www.solcatering.es/wp-content/uploads/2021/02/canalones-de-carne-gratinados.jpg",
+    "favorito": 0
   },
   {
     "id": 27,
@@ -426,7 +452,8 @@
     "tipo_de_plato": "Entrante",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "30 minutos",
-    "imagen": "https://www.divinacocina.es/wp-content/uploads/huevos-rellenos-curry.jpg"
+    "imagen": "https://www.divinacocina.es/wp-content/uploads/huevos-rellenos-curry.jpg",
+    "favorito": 0
   },
   {
     "id": 28,
@@ -444,7 +471,8 @@
     "tipo_de_plato": "Primer plato",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "1 hora y 30 minutos",
-    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2018/11/23/5e99797c2b095.jpeg"
+    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2018/11/23/5e99797c2b095.jpeg",
+    "favorito": 0
   },
   {
     "id": 29,
@@ -462,7 +490,8 @@
     "tipo_de_plato": "Segundo plato",
     "dificultad": "Media",
     "tiempo_de_preparacion": "1 hora",
-    "imagen": "https://www.hogarmania.com/archivos/201510/5643-1-bacalao-a-la-vizcaina-1028-xl-1280x720x80xX.jpg"
+    "imagen": "https://www.hogarmania.com/archivos/201510/5643-1-bacalao-a-la-vizcaina-1028-xl-1280x720x80xX.jpg",
+    "favorito": 0
   },
   {
     "id": 30,
@@ -480,7 +509,8 @@
     "tipo_de_plato": "Segundo plato",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "1 hora",
-    "imagen": "https://i.ytimg.com/vi/b3RELMib10o/maxresdefault.jpg"
+    "imagen": "https://i.ytimg.com/vi/b3RELMib10o/maxresdefault.jpg",
+    "favorito": 0
   },
   {
     "id": 31,
@@ -498,7 +528,8 @@
     "tipo_de_plato": "Postre",
     "dificultad": "Media",
     "tiempo_de_preparacion": "1 hora y 30 minutos",
-    "imagen": "https://i.ytimg.com/vi/SzdCr5elApA/maxresdefault.jpg"
+    "imagen": "https://i.ytimg.com/vi/SzdCr5elApA/maxresdefault.jpg",
+    "favorito": 0
   },
   {
     "id": 32,
@@ -515,7 +546,8 @@
     "tipo_de_plato": "Entrante",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "15 minutos",
-    "imagen": "https://www.paulinacocina.net/wp-content/uploads/2022/06/receta-de-langostinos-al-ajillo-1200x774.jpg"
+    "imagen": "https://www.paulinacocina.net/wp-content/uploads/2022/06/receta-de-langostinos-al-ajillo-1200x774.jpg",
+    "favorito": 0
   },
   {
     "id": 33,
@@ -533,7 +565,8 @@
     "tipo_de_plato": "Segundo plato",
     "dificultad": "Media",
     "tiempo_de_preparacion": "2 horas",
-    "imagen": "https://www.enekosukaldari.com/wp-content/uploads/cordero_lechal_asado_al_horno_01.jpg"
+    "imagen": "https://www.enekosukaldari.com/wp-content/uploads/cordero_lechal_asado_al_horno_01.jpg",
+    "favorito": 0
   },
   {
     "id": 34,
@@ -544,7 +577,8 @@
     "tipo_de_plato": "Postre",
     "dificultad": "Media",
     "tiempo_de_preparacion": "1 hora",
-    "imagen": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/A13E0EAA-DFA7-4264-8B3B-79CCC77F9282/Derivates/B59B434D-7C1D-4EEB-9CE2-B21BD45533D9.jpg"
+    "imagen": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/A13E0EAA-DFA7-4264-8B3B-79CCC77F9282/Derivates/B59B434D-7C1D-4EEB-9CE2-B21BD45533D9.jpg",
+    "favorito": 0
   },
   {
     "id": 35,
@@ -563,7 +597,8 @@
     "tipo_de_plato": "Entrante",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "30 minutos",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlxQCStT1hqXPbLNOM6BvvRcdc4okVmvmSKQ&s"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlxQCStT1hqXPbLNOM6BvvRcdc4okVmvmSKQ&s",
+    "favorito": 0
   },
   {
     "id": 36,
@@ -582,7 +617,8 @@
     "tipo_de_plato": "Segundo plato",
     "dificultad": "Media",
     "tiempo_de_preparacion": "1 hora",
-    "imagen": "https://laxernadelmar.com/wp-content/uploads/2023/04/Los-6-ingredientes-que-no-pueden-faltar-en-una-fideua.jpg"
+    "imagen": "https://laxernadelmar.com/wp-content/uploads/2023/04/Los-6-ingredientes-que-no-pueden-faltar-en-una-fideua.jpg",
+    "favorito": 0
   },
   {
     "id": 37,
@@ -600,7 +636,8 @@
     "tipo_de_plato": "Entrante",
     "dificultad": "Media",
     "tiempo_de_preparacion": "45 minutos",
-    "imagen": "https://www.albo.es/wp-content/uploads/2019/08/pimientos-piquillo-rellenos-atun.jpg"
+    "imagen": "https://www.albo.es/wp-content/uploads/2019/08/pimientos-piquillo-rellenos-atun.jpg",
+    "favorito": 0
   },
   {
     "id": 38,
@@ -618,7 +655,8 @@
     "tipo_de_plato": "Segundo plato",
     "dificultad": "Difícil",
     "tiempo_de_preparacion": "3 horas",
-    "imagen": "https://carniceriavictorsalvo.com/wp-content/uploads/2023/02/receta-rabo-de-toro-presentacion-plato-Carniceria-Victor-Salvo.jpg"
+    "imagen": "https://carniceriavictorsalvo.com/wp-content/uploads/2023/02/receta-rabo-de-toro-presentacion-plato-Carniceria-Victor-Salvo.jpg",
+    "favorito": 0
   },
   {
     "id": 39,
@@ -629,7 +667,8 @@
     "tipo_de_plato": "Postre",
     "dificultad": "Media",
     "tiempo_de_preparacion": "1 hora y 30 minutos",
-    "imagen": "https://cocinaabuenashoras.com/files/tarta-de-limon-y-nata-2.jpg"
+    "imagen": "https://cocinaabuenashoras.com/files/tarta-de-limon-y-nata-2.jpg",
+    "favorito": 0
   },
   {
     "id": 40,
@@ -648,7 +687,8 @@
     "tipo_de_plato": "Segundo plato",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "30 minutos",
-    "imagen": "https://www.paulinacocina.net/wp-content/uploads/2022/05/receta-de-salmon-al-horno.jpg"
+    "imagen": "https://www.paulinacocina.net/wp-content/uploads/2022/05/receta-de-salmon-al-horno.jpg",
+    "favorito": 0
   },
   {
     "id": 41,
@@ -666,7 +706,8 @@
     "tipo_de_plato": "Postre",
     "dificultad": "Fácil",
     "tiempo_de_preparacion": "20 minutos",
-    "imagen": "https://blog.dia.es/wp-content/uploads/2022/04/tortitas-americanas-esponjosas.jpg"
+    "imagen": "https://blog.dia.es/wp-content/uploads/2022/04/tortitas-americanas-esponjosas.jpg",
+    "favorito": 0
   },
   {
     "id": 42,
@@ -684,6 +725,7 @@
     "tipo_de_plato": "Primer plato",
     "dificultad": "Media",
     "tiempo_de_preparacion": "1 hora",
-    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2018/12/28/5e997f89bca84.r_d.493-309-0.jpeg"
+    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2018/12/28/5e997f89bca84.r_d.493-309-0.jpeg",
+    "favorito": 0
   }
 ]

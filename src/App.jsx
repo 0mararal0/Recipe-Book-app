@@ -21,7 +21,10 @@ function App() {
       <Routes>
         <Route path={"/"} element={<Home data={data} setData={setData} />} />
         <Route path="/about" element={<About />} />
-        <Route path={"/favoritesRecipes"} element={<FavoriteRecipes />} />
+        <Route
+          path={"/favoritesRecipes"}
+          element={<FavoriteRecipes data={data} />}
+        />
         <Route
           path="/createRecipe"
           element={<CrearReceta setData={setData} />}

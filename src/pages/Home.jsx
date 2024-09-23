@@ -4,7 +4,7 @@ import "./styleHome.css";
 import { Link } from "react-router-dom";
 import iconComida from "../assets/images/iconComida.png";
 
-export const Home = ({ data }) => {
+export const Home = ({ data, setData }) => {
   const [showData, setShowData] = useState(data);
   const [countCard, setCountCard] = useState(8);
 
@@ -40,6 +40,9 @@ export const Home = ({ data }) => {
     setShowData(data);
     setCountCard(8);
   };
+  const actualizarData = () => {
+    setShowData(data);
+  };
 
   return (
     <div className="containerHome">
@@ -70,12 +73,14 @@ export const Home = ({ data }) => {
           {showData.slice(0, countCard).map((receta, index) => {
             return (
               <div key={index}>
-                <Link
-                  to={`/itemDetails/${receta.id}`}
-                  style={{ textDecoration: "none" }}
-                >
-                  <Recetas receta={receta} index={index} data={data} />
-                </Link>
+                {receta.favorito === 1 ? <p>1</p> : <p>0</p>}
+                <Recetas
+                  receta={receta}
+                  index={index}
+                  data={data}
+                  setData={setData}
+                  actualizarData={actualizarData}
+                />
               </div>
             );
           })}

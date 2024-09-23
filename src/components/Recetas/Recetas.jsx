@@ -1,33 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styleRecetas.css";
 import { Link } from "react-router-dom";
 
-export const Recetas = (props) => {
-  {
-    /* lleve el estado a app */
-  }
+export const Recetas = ({ data, setData, receta, index, actualizarData }) => {
+  const [iconFav, setIconFav] = useState(false);
+  const handleFavorito = () => {
+    if (data[receta.id - 1].favorito === 1) {
+      const editFav = data.map((elem) => {
+        if (elem.id === receta.id) {
+          return { ...elem, favorito: 0 };
+        }
+        return elem;
+      });
+      setData(editFav);
+      setIconFav(true);
+      actualizarData();
+    } else if (data[receta.id - 1].favorito === 0) {
+      const editFav = data.map((elem) => {
+        if (elem.id === receta.id) {
+          return { ...elem, favorito: 1 };
+        }
+        return elem;
+      });
+      setData(editFav);
+      setIconFav(false);
+      actualizarData();
+    }
+  };
 
-  /*  const handleDelete = () => {
-    let prov;
-    prov = props.data.slice(0);
-    prov.splice(props.index, 1);
-    props.setData(prov);
-  }; */
   return (
     <div className="comida">
-      {/*  <Link to={`/recetas/${props.receta.id}`}>
-        {" "}
-        <img src={props.receta.image} alt="" />{" "}
-      </Link> */}
-      <img src={props.receta.imagen} alt="" /> {/* cambie image por imagen */}
-      <div>
-        <h2>{props.receta.titulo}</h2> {/* cambie title por titulo*/}
-        {/* <p>{props.receta.calories > 250 ? "☹️" : "🙂"} </p> */}
-      </div>
-      <div>
-        <p>⌛{props.receta.tiempo_de_preparacion}</p>
-        <p>⚙️{props.receta.dificultad}</p>
-      </div>
+      <button onClick={handleFavorito} className="iconFav">
+        {data[receta.id - 1].favorito === 1 ? (
+          <p style={{ backgroundColor: "transparent" }}>❤️ </p>
+        ) : (
+          <p style={{ backgroundColor: "transparent" }}> 🤍 </p>
+        )}
+      </button>
+      <Link to={`/itemDetails/${receta.id}`} style={{ textDecoration: "none" }}>
+        <img src={receta.imagen} alt="" />
+        <div>
+          <h2>{receta.titulo}</h2>
+        </div>
+        <div>
+          <p>⌛{receta.tiempo_de_preparacion}</p>
+          <p>⚙️{receta.dificultad}</p>
+        </div>
+      </Link>
     </div>
   );
 };
