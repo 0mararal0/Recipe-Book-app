@@ -22,6 +22,18 @@
 .comida h2 {
   color: black;
 }
+.iconFav {
+  border: none;
+  width: 80px;
+  background-color: transparent;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: -30px;
+}
+.iconFav p {
+  font-size: 3rem;
+  margin-block: 0;
+}
 .comida:hover {
   border: 2px solid rgb(146, 145, 145);
   box-shadow: 0px 10px 0px rgb(74, 72, 72), 5px 5px 10px rgb(128, 128, 128);

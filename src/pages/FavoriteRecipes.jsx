@@ -1,5 +1,27 @@
 import React from "react";
+import { Recetas } from "../components/Recetas/Recetas";
 
-export const FavoriteRecipes = () => {
-  return <div>FavoriteRecipes</div>;
+export const FavoriteRecipes = ({ data }) => {
+  console.log(data);
+
+  return (
+    <>
+      <div className="containerFavorito">
+        <div className="containerTitleFavorito">
+          <h3>Recetas Favoritas</h3>
+        </div>
+        <div className="recetasGaleria">
+          {data
+            .filter((e) => e.favorito === 1)
+            .map((receta) => {
+              return (
+                <div key={receta.id}>
+                  <Recetas receta={receta} data={data} />
+                </div>
+              );
+            })}
+        </div>
+      </div>
+    </>
+  );
 };
