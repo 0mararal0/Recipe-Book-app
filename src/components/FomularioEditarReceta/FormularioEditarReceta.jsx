@@ -1,6 +1,6 @@
 import React from "react";
 import "./FormularioEditarReceta.css";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -12,7 +12,7 @@ export function FormularioEditarReceta(props) {
   const recetaSeleccionada = props.data.find((eachReceta) => {
     const identificadorReceta = parseInt(
       parametrosDinamicos.identificadorReceta
-    ); 
+    );
     return eachReceta.id === identificadorReceta;
   });
   const [titulo, setTitulo] = useState(recetaSeleccionada.titulo);
@@ -79,24 +79,19 @@ export function FormularioEditarReceta(props) {
       imagen: imagen,
     };
 
-    
     let recetasFiltradas = props.data.filter((cadaReceta) => {
       return cadaReceta.id !== recetaSeleccionada.id;
     });
 
-    
     recetasFiltradas.push(recetaEditada);
 
-    
     props.setData(recetasFiltradas);
 
-    
     navegar(`/itemDetails/${recetaSeleccionada.id}`);
   };
 
   return (
     <div className="contenedor-formulario">
-    
       <form onSubmit={handleEditar} className="formulario">
         <h1>Editar Receta</h1>
         <div>
@@ -131,9 +126,9 @@ export function FormularioEditarReceta(props) {
                 value={porciones}
                 onChange={handelPorcionesCambiar}
                 name="porciones"
-                type="text"
+                type="number"
+                min={1}
                 placeholder=""
-               //porque no me sale con las 2 flechitas para mover arriba y abajo
               />
             </label>
           </div>
@@ -194,22 +189,21 @@ export function FormularioEditarReceta(props) {
               onChange={handelImagen}
               name="imagen"
               type="url"
-              placeholder="Imagen del"
+              placeholder=""
             />
           </label>
         </div>
         <div className="contenedor-botones">
-        <div className="boton-Secundario">
-        <button type="submit">Cerrar</button>
+          <div className="contenedor-boton">
+            <Link  to={`/itemDetails/${recetaSeleccionada.id}`}>
+              <button className="boton-secundario">Cerrar</button>
+            </Link>
+          </div>
+          <div className="contenedor-boton">
+            <button type="submit">Editar</button>
+          </div>
         </div>
-        <div className="contenedor-boton">
-          <button type="submit">Editar Receta</button>
-        </div>
-          
-        </div>
-        
       </form>
-     
     </div>
   );
 }

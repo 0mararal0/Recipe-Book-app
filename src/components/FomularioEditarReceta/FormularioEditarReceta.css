@@ -9,10 +9,13 @@
 .formulario {
     margin: 0 auto;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
 }
 
 form {
-    width: 500px;
+    width: 435px;
     border: 1px solid rgb(17, 24, 39);
     padding: 50px;
     border-radius: 5px;
@@ -93,11 +96,10 @@ select:focus {
     align-items: center;
 }
 
-
 .contenedor-boton button {
     margin-top: 20px;
     padding: 12px 20px 12px 20px;
-    width: 150px;
+    width: 100px;
     border-radius: 5px;
     border-width: 1px;
     background-color: #A3C9AA;
@@ -111,16 +113,16 @@ select:focus {
 .contenedor-botones {
     display: flex;
     justify-content: right;
-    gap: 1.5rem; 
-
+    gap: 1.5rem;
+    max-width: 426px;
 }
-.boton-Secundario{
-    margin-top: 20px;
-    padding: 12px 20px 12px 20px;
-    width: 150px;
-    border-radius: 0px;
-    border-width: 0px;
+
+button.boton-secundario {
     background-color: white;
+    border: 2px solid #A3C9AA;
+}
 
-
+button.boton-secundario:hover {
+    background-color: rgb(249, 250, 251);
+    color: rgb(17, 24, 39);
 }
