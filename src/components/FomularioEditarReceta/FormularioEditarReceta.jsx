@@ -93,7 +93,7 @@ export function FormularioEditarReceta(props) {
   return (
     <div className="contenedor-formulario">
       <form onSubmit={handleEditar} className="formulario">
-        <h1>Editar Receta</h1>
+        <h1>Editar Receta 🍽️</h1>
         <div>
           <label>
             <div>Título</div>

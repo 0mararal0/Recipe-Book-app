@@ -34,16 +34,16 @@ export const ItemDetails = (props) => {
             <h1>{recetaSeleccionada.titulo} </h1>
               <div className="contenedor-info-fila">
                 <div className="info-fila-titulo">
-                  ⌛ {recetaSeleccionada.tipo_de_plato}
+                  <span>🥘</span> {recetaSeleccionada.tipo_de_plato}
                 </div>
                 <div className="info-fila-titulo">
-                  ⌛ {recetaSeleccionada.porciones}
+                  <span>🍽️</span> {recetaSeleccionada.porciones} porciones
                 </div>
                 <div className="info-fila-titulo">
-                  ⌛ {recetaSeleccionada.tiempo_de_preparacion}
+                <span>⌛</span> {recetaSeleccionada.tiempo_de_preparacion}
                 </div>
                 <div className="info-fila-titulo">
-                  ⚙️ {recetaSeleccionada.dificultad}
+                  <span>⚙️</span> {recetaSeleccionada.dificultad}
                 </div>
               </div>
 
