@@ -1,6 +1,6 @@
 import React from "react";
 import "./FormularioEditarReceta.css";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -12,7 +12,7 @@ export function FormularioEditarReceta(props) {
   const recetaSeleccionada = props.data.find((eachReceta) => {
     const identificadorReceta = parseInt(
       parametrosDinamicos.identificadorReceta
-    ); //para cambiar recipe que es cadena a número que es nuestro id
+    );
     return eachReceta.id === identificadorReceta;
   });
   const [titulo, setTitulo] = useState(recetaSeleccionada.titulo);
@@ -79,27 +79,21 @@ export function FormularioEditarReceta(props) {
       imagen: imagen,
     };
 
-    // lista de recetas sin la receta que estamos editando
     let recetasFiltradas = props.data.filter((cadaReceta) => {
       return cadaReceta.id !== recetaSeleccionada.id;
     });
 
-    // agregamos de vuelta la receta editada
     recetasFiltradas.push(recetaEditada);
 
-    // guardamos en el estado
     props.setData(recetasFiltradas);
 
-    // aca usamos navegar para poder ir a la pagina de itemDetails
-    // tenemos que pasarle la url a donde queremos irnos
     navegar(`/itemDetails/${recetaSeleccionada.id}`);
   };
 
   return (
     <div className="contenedor-formulario">
-      {/* FORM */}
       <form onSubmit={handleEditar} className="formulario">
-        <h1>Editar receta</h1>
+        <h1>Editar Receta 🍽️</h1>
         <div>
           <label>
             <div>Título</div>
@@ -111,7 +105,6 @@ export function FormularioEditarReceta(props) {
               placeholder=""
             />
           </label>
-
 
           <div className="contenedor-label-fila">
             <label>
@@ -133,7 +126,8 @@ export function FormularioEditarReceta(props) {
                 value={porciones}
                 onChange={handelPorcionesCambiar}
                 name="porciones"
-                type="text"
+                type="number"
+                min={1}
                 placeholder=""
               />
             </label>
@@ -141,8 +135,7 @@ export function FormularioEditarReceta(props) {
         </div>
 
         <div className="contenedor-label-fila">
-
-        <label>
+          <label>
             <div>Dificultad</div>
             <select
               name="nivel de dificultad"
@@ -165,7 +158,6 @@ export function FormularioEditarReceta(props) {
               placeholder=""
             />
           </label>
-
         </div>
 
         <div>
@@ -197,15 +189,21 @@ export function FormularioEditarReceta(props) {
               onChange={handelImagen}
               name="imagen"
               type="url"
-              placeholder="Imagen del"
+              placeholder=""
             />
           </label>
         </div>
-        <div className="contenedor-boton">
-          <button type="submit">Editar Receta</button>
+        <div className="contenedor-botones">
+          <div className="contenedor-boton">
+            <Link  to={`/itemDetails/${recetaSeleccionada.id}`}>
+              <button className="boton-secundario">Cancelar</button>
+            </Link>
+          </div>
+          <div className="contenedor-boton">
+            <button type="submit">Editar</button>
+          </div>
         </div>
       </form>
-      {/* FORM END */}
     </div>
   );
 }

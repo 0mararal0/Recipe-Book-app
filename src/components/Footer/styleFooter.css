@@ -1,5 +1,5 @@
 .containerFooter {
-  background-color: bisque;
+  background-color: rgb(237 202 144 / 26%);
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -17,4 +17,17 @@
   width: 100px;
   filter: grayscale(1);
   margin: 0;
+}
+
+
+.containerFooter a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(17, 24, 39);
+}
+
+.containerFooter img {
+  width: 32px;
+  height: 32px;
 }

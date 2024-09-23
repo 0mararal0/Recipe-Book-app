@@ -7,7 +7,7 @@ function CrearReceta({ setData }) {
   const [titulo, setTitulo] = useState("");
   const [tipoDePlato, setTipoDePlato] = useState("");
   const [tiempoDePreparacion, setTiempoDePreparacion] = useState("");
-  const [porciones, setPorciones] = useState(0);
+  const [porciones, setPorciones] = useState(1);
   const [dificultad, setDificultad] = useState("");
   const [elaboracion, setElaboracion] = useState("");
   const [ingredientes, setIngredientes] = useState([]);
@@ -59,7 +59,7 @@ function CrearReceta({ setData }) {
     <div className="crear-receta-form">
 
       <form onSubmit={handleAddReceta} className="formulario">
-      <h1>Crear nueva receta 🍽️ </h1>
+      <h1>Crear Nueva Receta 🍽️ </h1>
         <div>
           <label className="titulo"></label>
           <div>Título</div>
@@ -82,6 +82,7 @@ function CrearReceta({ setData }) {
             name="tipoDePlato"
             required
           >
+            <option value="">---</option>
             <option value="Entrante">Entrante</option>
             <option value="Principal">Principal</option>
             <option value="Postre">Postre</option>
@@ -95,6 +96,7 @@ function CrearReceta({ setData }) {
             value={porciones}
             type="number"
             name="porciones"
+            min={1}
             required
           />
           </label>
@@ -111,6 +113,7 @@ function CrearReceta({ setData }) {
             name="dificultad"
             required
           >
+            <option value="">---</option>
             <option value="Facil">Fácil</option>
             <option value="Medio">Medio</option>
             <option value="Dificil">Dificil</option>
@@ -165,14 +168,18 @@ function CrearReceta({ setData }) {
             />
             </label>
             </div>
-            <div className="contenedor-boton">
-        <button type="submit"  className="boton2">Agregar Receta</button>
 
-          <Link to={"/"}>
-            <button>Borrar receta</button>
-          </Link>
+            <div className="contenedor-botones">
+              <div className="contenedor-boton">
+                <Link to={"/"}>
+                  <button className="boton-secundario">Cancelar</button>
+                </Link>
+              </div>
+              <div className="contenedor-boton">
+              <button type="submit">Agregar</button>
+              </div>
+            </div>
 
-        </div>
       </form>
     </div>
   );

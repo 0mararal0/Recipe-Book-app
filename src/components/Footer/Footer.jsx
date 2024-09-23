@@ -10,7 +10,7 @@ export const Footer = () => {
         Condiciones
       </p>
       <a href="https://github.com/0mararal0/Recipe-Book-app" target="_blank">
-        👉 Nuestro repositorio 👈
+      <img src="/src/assets/images/github-brands-solid.svg"/> 👉  Nuestro repositorio 👈
       </a>
       <img src={redesSociales} alt="" />
     </div>
