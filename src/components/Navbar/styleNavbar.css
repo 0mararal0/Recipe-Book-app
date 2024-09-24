@@ -1,6 +1,6 @@
 .containerNavbar {
-  background-color: bisque;
   width: 99.8dvw;
+  padding-top: 10px;
 }
 .contentNavbar {
   max-width: 1280px;
@@ -12,25 +12,28 @@
   margin-inline: auto;
 }
 .containerLogoNavbar {
-  margin-inline: 20px;
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
 }
 .containerLogoNavbar img {
   width: 70px;
   height: 70px;
 }
 .containerLogoNavbar h1 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: "choco";
   margin: 0;
 }
 .containerLink {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   display: flex;
-  gap: 20px;
+  gap: 50px;
 }
 .containerLink p {
   color: black;
+  font-weight: bold;
 }
 .containerCreateRecipe {
   border: 1px solid black;
@@ -38,17 +41,25 @@
   border-radius: 50px;
   margin-inline: 20px;
   margin-block: 10px;
+  background-color: #F2BC57;
 }
 .containerCreateRecipe p {
   color: black;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 0;
 }
 
 .containerCreateRecipe:hover {
-  background-color: #f5df95;
+  background-color: #956c3d;
+  color: white;
   font-weight: bold;
+  transition: 0.5s;
+  scale: 0.9;
+}
+
+.containerCreateRecipe:hover p {
+  color: white;
 }
 
 .logo {
@@ -66,4 +77,13 @@
 
 .crear-receta-btn:hover {
   background-color: rgb(165, 67, 42);
+}
+
+
+.navbar-linea {
+  background-color: rgb(237 202 144 / 26%);
+  height: 1px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
 }
