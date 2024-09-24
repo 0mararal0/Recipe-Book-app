@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./crearStyle.css";
 import { Link } from "react-router-dom";
 
-function CrearReceta({ setData }) {
+function CrearReceta({ data, setData }) {
   const [titulo, setTitulo] = useState("");
   const [tipoDePlato, setTipoDePlato] = useState("");
   const [tiempoDePreparacion, setTiempoDePreparacion] = useState("");
@@ -30,7 +30,7 @@ function CrearReceta({ setData }) {
     event.preventDefault();
 
     const nuevaReceta = {
-      id: Date.now(), // id único basado en el tiempo en milisegundos
+      id: data.length + 1, // el id tiene que ser númerico, porque entiendo que favorito necesita numeros
       titulo,
       tipo_de_plato: tipoDePlato,
       tiempo_de_preparacion: tiempoDePreparacion,
