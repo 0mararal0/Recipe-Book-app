@@ -4,43 +4,27 @@ import "./styleHome.css";
 import iconComida from "../assets/images/iconComida.png";
 
 export const Home = ({ data, setData }) => {
-  const [showData, setShowData] = useState(data);
+  const [showData, setShowData] = useState("All");
   const [countCard, setCountCard] = useState(8);
 
   const handleAdd = () => {
     setCountCard(countCard + 8);
   };
-
   const handleEntrante = () => {
-    setShowData(
-      data.filter((elem) => {
-        return elem.tipo_de_plato === "Entrante";
-      })
-    );
+    setShowData("Entrante");
     setCountCard(8);
   };
   const handlePrincipal = () => {
-    setShowData(
-      data.filter((elem) => {
-        return elem.tipo_de_plato === "Primer plato";
-      })
-    );
+    setShowData("Primer plato");
     setCountCard(8);
   };
   const handlePostre = () => {
-    setShowData(
-      data.filter((elem) => {
-        return elem.tipo_de_plato === "Postre";
-      })
-    );
+    setShowData("Postre");
     setCountCard(8);
   };
   const handleAll = () => {
-    setShowData(data);
+    setShowData("All");
     setCountCard(8);
-  };
-  const actualizarData = () => {
-    setShowData(data);
   };
 
   return (
@@ -69,19 +53,66 @@ export const Home = ({ data, setData }) => {
       </div>
       <div className="side-recetas">
         <div className="recetasGaleria">
-          {showData.slice(0, countCard).map((receta, index) => {
-            return (
-              <div key={index}>
-                <Recetas
-                  receta={receta}
-                  index={index}
-                  data={data}
-                  setData={setData}
-                  actualizarData={actualizarData}
-                />
-              </div>
-            );
-          })}
+          {showData === "All"
+            ? data.slice(0, countCard).map((receta, index) => {
+                return (
+                  <div key={index}>
+                    <Recetas
+                      receta={receta}
+                      index={index}
+                      data={data}
+                      setData={setData}
+                    />
+                  </div>
+                );
+              })
+            : showData === "Entrante"
+            ? data
+                .filter((e) => e.tipo_de_plato === "Entrante")
+                .slice(0, countCard)
+                .map((receta, index) => {
+                  return (
+                    <div key={index}>
+                      <Recetas
+                        receta={receta}
+                        index={index}
+                        data={data}
+                        setData={setData}
+                      />
+                    </div>
+                  );
+                })
+            : showData === "Primer plato"
+            ? data
+                .filter((e) => e.tipo_de_plato === "Primer plato")
+                .slice(0, countCard)
+                .map((receta, index) => {
+                  return (
+                    <div key={index}>
+                      <Recetas
+                        receta={receta}
+                        index={index}
+                        data={data}
+                        setData={setData}
+                      />
+                    </div>
+                  );
+                })
+            : data
+                .filter((e) => e.tipo_de_plato === "Postre")
+                .slice(0, countCard)
+                .map((receta, index) => {
+                  return (
+                    <div key={index}>
+                      <Recetas
+                        receta={receta}
+                        index={index}
+                        data={data}
+                        setData={setData}
+                      />
+                    </div>
+                  );
+                })}
         </div>
       </div>
       <div className="buttonMostrarMas">
