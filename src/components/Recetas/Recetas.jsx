@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React, from "react";
 import "./styleRecetas.css";
 import { Link } from "react-router-dom";
 
-export const Recetas = ({ data, setData, receta, index, actualizarData }) => {
-  const [iconFav, setIconFav] = useState(false);
+export const Recetas = ({ data, setData, receta }) => {
   const handleFavorito = () => {
-    if (data[receta.id - 1].favorito === 1) {
+    if (receta.favorito === 1) {
       const editFav = data.map((elem) => {
         if (elem.id === receta.id) {
           return { ...elem, favorito: 0 };
@@ -13,9 +12,7 @@ export const Recetas = ({ data, setData, receta, index, actualizarData }) => {
         return elem;
       });
       setData(editFav);
-      setIconFav(true);
-      actualizarData();
-    } else if (data[receta.id - 1].favorito === 0) {
+    } else if (receta.favorito === 0) {
       const editFav = data.map((elem) => {
         if (elem.id === receta.id) {
           return { ...elem, favorito: 1 };
@@ -23,15 +20,13 @@ export const Recetas = ({ data, setData, receta, index, actualizarData }) => {
         return elem;
       });
       setData(editFav);
-      setIconFav(false);
-      actualizarData();
     }
   };
 
   return (
     <div className="comida">
       <button onClick={handleFavorito} className="iconFav">
-        {data[receta.id - 1].favorito === 1 ? (
+        {receta.favorito === 1 ? (
           <p style={{ backgroundColor: "transparent" }}>❤️ </p>
         ) : (
           <p style={{ backgroundColor: "transparent" }}> 🤍 </p>

@@ -39,6 +39,7 @@ function CrearReceta({ setData }) {
       elaboracion,
       ingredientes,
       imagen,
+      favorito: 0,
     };
 
     setData((recetasActuales) => [nuevaReceta, ...recetasActuales]);
@@ -57,9 +58,8 @@ function CrearReceta({ setData }) {
 
   return (
     <div className="crear-receta-form">
-
       <form onSubmit={handleAddReceta} className="formulario">
-      <h1>Crear Nueva Receta 🍽️ </h1>
+        <h1>Crear Nueva Receta 🍽️ </h1>
         <div>
           <label className="titulo"></label>
           <div>Título</div>
@@ -75,111 +75,106 @@ function CrearReceta({ setData }) {
         <div className="contenedor-label-fila">
           <label>
             <div>Plato</div>
-          <select
-            onChange={handleTipoDePlatoChange}
-            value={tipoDePlato}
-            type="text"
-            name="tipoDePlato"
-            required
-          >
-            <option value="">---</option>
-            <option value="Entrante">Entrante</option>
-            <option value="Principal">Principal</option>
-            <option value="Postre">Postre</option>
-          </select>
+            <select
+              onChange={handleTipoDePlatoChange}
+              value={tipoDePlato}
+              type="text"
+              name="tipoDePlato"
+              required
+            >
+              <option value="">---</option>
+              <option value="Entrante">Entrante</option>
+              <option value="Principal">Principal</option>
+              <option value="Postre">Postre</option>
+            </select>
           </label>
 
           <label className="porciones">
-            <div>Porciones</div> 
-          <input
-            onChange={handlePorcionesChange}
-            value={porciones}
-            type="number"
-            name="porciones"
-            min={1}
-            required
-          />
+            <div>Porciones</div>
+            <input
+              onChange={handlePorcionesChange}
+              value={porciones}
+              type="number"
+              name="porciones"
+              min={1}
+              required
+            />
           </label>
-          </div>
+        </div>
 
-          <div className="contenedor-label-fila">
-
+        <div className="contenedor-label-fila">
           <label className="dificultad">
-            <div>Dificultad</div> 
-          <select
-            onChange={handleDificultadChange}
-            value={dificultad}
-            type="text"
-            name="dificultad"
-            required
-          >
-            <option value="">---</option>
-            <option value="Facil">Fácil</option>
-            <option value="Medio">Medio</option>
-            <option value="Dificil">Dificil</option>
-          </select>
+            <div>Dificultad</div>
+            <select
+              onChange={handleDificultadChange}
+              value={dificultad}
+              type="text"
+              name="dificultad"
+              required
+            >
+              <option value="">---</option>
+              <option value="Facil">Fácil</option>
+              <option value="Medio">Medio</option>
+              <option value="Dificil">Dificil</option>
+            </select>
           </label>
 
           <label className="tiempoDePreparacion">
             <div>Tiempo de Preparación</div>
-          <input
-            onChange={handleTiempoDePreparacionChange}
-            value={tiempoDePreparacion}
-            type="text"
-            name="tiempoDePreparacion"
-            required
-          />
+            <input
+              onChange={handleTiempoDePreparacionChange}
+              value={tiempoDePreparacion}
+              type="text"
+              name="tiempoDePreparacion"
+              required
+            />
           </label>
-
-          </div>
-
+        </div>
 
         <div>
           <label className="elaboracion">
-            <div>Elaboración</div> 
-          <textarea
-            onChange={handleElaboracionChange}
-            value={elaboracion}
-            name="elaboracion"
-            required
-          ></textarea>
+            <div>Elaboración</div>
+            <textarea
+              onChange={handleElaboracionChange}
+              value={elaboracion}
+              name="elaboracion"
+              required
+            ></textarea>
           </label>
 
-        
           <label className="ingredientes">
             <div>Ingredientes</div>
-          <input
-            onChange={handleIngredientesChange}
-            value={ingredientes.join(",")}
-            type="text"
-            name="ingredientes"
-            required
+            <input
+              onChange={handleIngredientesChange}
+              value={ingredientes.join(",")}
+              type="text"
+              name="ingredientes"
+              required
             />
-            </label>
+          </label>
 
           <label className="imagen">
-            <div>Imagen</div> 
-          <input
-            onChange={handleImagenChange}
-            value={imagen}
-            type="text"
-            name="imagen"
-            required
+            <div>Imagen</div>
+            <input
+              onChange={handleImagenChange}
+              value={imagen}
+              type="text"
+              name="imagen"
+              required
             />
-            </label>
-            </div>
+          </label>
+        </div>
 
-            <div className="contenedor-botones">
-              <div className="contenedor-boton">
-                <Link to={"/"}>
-                  <button className="boton-secundario">Cancelar</button>
-                </Link>
-              </div>
-              <div className="contenedor-boton">
-              <button type="submit">Agregar</button>
-              </div>
-            </div>
-
+        <div className="contenedor-botones">
+          <div className="contenedor-boton">
+            <Link to={"/"}>
+              <button className="boton-secundario">Cancelar</button>
+            </Link>
+          </div>
+          <div className="contenedor-boton">
+            <button type="submit">Agregar</button>
+          </div>
+        </div>
       </form>
     </div>
   );
