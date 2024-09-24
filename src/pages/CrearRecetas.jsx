@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./crearStyle.css";
 import { Link } from "react-router-dom";
 
-function CrearReceta({ data, setData }) {
+function CrearReceta({setData }) {
   const [titulo, setTitulo] = useState("");
   const [tipoDePlato, setTipoDePlato] = useState("");
   const [tiempoDePreparacion, setTiempoDePreparacion] = useState("");
@@ -30,7 +30,7 @@ function CrearReceta({ data, setData }) {
     event.preventDefault();
 
     const nuevaReceta = {
-      id: data.length + 1, // el id tiene que ser númerico, porque entiendo que favorito necesita numeros
+      id: Date.now(),
       titulo,
       tipo_de_plato: tipoDePlato,
       tiempo_de_preparacion: tiempoDePreparacion,
@@ -39,6 +39,7 @@ function CrearReceta({ data, setData }) {
       elaboracion,
       ingredientes,
       imagen,
+     
     };
 
     setData((recetasActuales) => [nuevaReceta, ...recetasActuales]);
@@ -84,7 +85,7 @@ function CrearReceta({ data, setData }) {
           >
             <option value="">---</option>
             <option value="Entrante">Entrante</option>
-            <option value="Principal">Principal</option>
+            <option value="Primer plato">Principal</option>
             <option value="Postre">Postre</option>
           </select>
           </label>
