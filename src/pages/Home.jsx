@@ -46,8 +46,8 @@ export const Home = ({ data, setData }) => {
   return (
     <div className="containerHome">
       <div className="containerTitle">
-        <h3>Display...</h3>
-        <h5>¿Qué vas a comer hoy?</h5>
+        <h3>¿Qué vas a comer hoy?</h3>
+        <h5>Tus recetas favoritas siempre a mano</h5>
       </div>
       <div className="buttonSelect">
         <button className="buttonEntrante" onClick={handleEntrante}>
@@ -86,7 +86,7 @@ export const Home = ({ data, setData }) => {
       </div>
       <div className="buttonMostrarMas">
         <button onClick={handleAdd}>
-          <p>Mostrar mas</p>
+          <p>Mostrar más</p>
         </button>
       </div>
     </div>

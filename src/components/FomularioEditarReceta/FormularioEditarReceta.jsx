@@ -103,6 +103,7 @@ export function FormularioEditarReceta(props) {
               name="titulo"
               type="text"
               placeholder=""
+              required
             />
           </label>
 
@@ -113,6 +114,7 @@ export function FormularioEditarReceta(props) {
                 name="nivel de dificultad"
                 value={tipo}
                 onChange={handelTipo}
+                required
               >
                 <option value="Entrante">Entrante</option>
                 <option value="Primer plato">Principal</option>
@@ -129,6 +131,7 @@ export function FormularioEditarReceta(props) {
                 type="number"
                 min={1}
                 placeholder=""
+                required
               />
             </label>
           </div>
@@ -141,6 +144,7 @@ export function FormularioEditarReceta(props) {
               name="nivel de dificultad"
               value={dificultad}
               onChange={handelDificultadCambiar}
+              required
             >
               <option value="Facil">Fácil</option>
               <option value="Medio">Medio</option>
@@ -156,6 +160,7 @@ export function FormularioEditarReceta(props) {
               name="tiempo de preparación"
               type="text"
               placeholder=""
+              required
             />
           </label>
         </div>
@@ -168,6 +173,7 @@ export function FormularioEditarReceta(props) {
               onChange={handelDescripcionCambiar}
               name="descripción"
               placeholder=""
+              required
             />
           </label>
 
@@ -178,6 +184,7 @@ export function FormularioEditarReceta(props) {
               onChange={handelIngredientesCambiar}
               name="ingredientes"
               placeholder=""
+              required
             />
           </label>
 
@@ -190,6 +197,7 @@ export function FormularioEditarReceta(props) {
               name="imagen"
               type="url"
               placeholder=""
+              required
             />
           </label>
         </div>
