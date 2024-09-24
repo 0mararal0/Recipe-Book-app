@@ -28,16 +28,16 @@ export const About = () => {
           <li>
             <strong>Sofía:</strong> Experta en diseño de usuario, puedes
             encontrar su trabajo{" "}
-            <Link href="https://github.com/somorales/" className="links">aquí</Link>
+            <a href="https://github.com/somorales/" className="links" target="_blank">aquí</a>
           </li>
           <li>
-            <strong>Alberto:</strong> Experto en JavaScript y desarrollo web, si
+            <strong>Alberto:</strong> Especialista en JavaScript y desarrollo web, si
             quieres ver su trabajo pulsa{" "}
-            <Link href="https://github.com/0mararal0" className="links">aquí</Link>
+            <a href="https://github.com/0mararal0" className="links" target="_blank">aquí</a>
           </li>
           <li>
             <strong>Emma:</strong> Entusiasta de la comida, repositorio git:{" "}
-            <Link href="https://github.com/emxgrz" className="links">pincha aquí</Link>
+            <a href="https://github.com/emxgrz" className="links" target="_blank">pincha aquí</a>
           </li>
         </ul>
       </section>
