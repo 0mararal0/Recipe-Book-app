@@ -27,7 +27,7 @@ function App() {
         />
         <Route
           path="/createRecipe"
-          element={<CrearReceta setData={setData} />}
+          element={<CrearReceta data={data} setData={setData} />}
         />
         <Route
           path={"/itemDetails/:recipe"}

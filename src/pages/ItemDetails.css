@@ -11,7 +11,7 @@
   max-width: 450px;
   border-radius: 50%;
   box-shadow: 50px 10px 150px rgb(237 202 144);
-  margin-top: 60px;
+  margin-top: 70px;
 }
 
 .contenedor-span {
@@ -44,7 +44,7 @@
 .info-fila-titulo {
   font-size: 1rem;
   line-height: 2rem;
-  border-left: 1px solid  rgb(237 202 144);
+  border-left: 1.5px solid #956c3d;
   padding-right: 1rem; 
   padding-left: 1rem; 
 }
@@ -69,4 +69,5 @@
 
 .item-details .contenedor-botones {
   margin-top: 100px;
+  width: 426px;
 }
