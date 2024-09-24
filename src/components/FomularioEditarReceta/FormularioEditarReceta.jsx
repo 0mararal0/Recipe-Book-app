@@ -115,7 +115,7 @@ export function FormularioEditarReceta(props) {
                 onChange={handelTipo}
               >
                 <option value="Entrante">Entrante</option>
-                <option value="Principal">Principal</option>
+                <option value="Primer plato">Principal</option>
                 <option value="Postre">Postre</option>
               </select>
             </label>
