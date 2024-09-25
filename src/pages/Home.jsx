@@ -34,22 +34,53 @@ export const Home = ({ data, setData }) => {
         <h5>Tus recetas favoritas siempre a mano</h5>
       </div>
       <div className="buttonSelect">
-        <button className="buttonEntrante" onClick={handleEntrante}>
-          <p>Entrante</p>
-          <img src={iconComida} alt="icono comida" />
-        </button>
-        <button className="buttonPrincipal" onClick={handlePrincipal}>
-          <p>Principal</p>
-          <img src={iconComida} alt="icono comida" />
-        </button>
-        <button className="buttonPostre" onClick={handlePostre}>
-          <p>Postre</p>
-          <img src={iconComida} alt="icono comida" />
-        </button>
-        <button className="buttonTodos" onClick={handleAll}>
-          <p>Todos</p>
-          <img src={iconComida} alt="icono comida" />
-        </button>
+        {showData === "Entrante" ? (
+          <button className="buttonEntranteSelect" onClick={handleEntrante}>
+            <p>Entrante</p>
+            <img src={iconComida} alt="icono comida" />
+          </button>
+        ) : (
+          <button className="buttonEntrante" onClick={handleEntrante}>
+            <p>Entrante</p>
+            <img src={iconComida} alt="icono comida" />
+          </button>
+        )}
+
+        {showData === "Primer plato" ? (
+          <button className="buttonPrincipalSelect" onClick={handlePrincipal}>
+            <p>Principal</p>
+            <img src={iconComida} alt="icono comida" />
+          </button>
+        ) : (
+          <button className="buttonPrincipal" onClick={handlePrincipal}>
+            <p>Principal</p>
+            <img src={iconComida} alt="icono comida" />
+          </button>
+        )}
+
+        {showData === "Postre" ? (
+          <button className="buttonPostreSelect" onClick={handlePostre}>
+            <p>Postre</p>
+            <img src={iconComida} alt="icono comida" />
+          </button>
+        ) : (
+          <button className="buttonPostre" onClick={handlePostre}>
+            <p>Postre</p>
+            <img src={iconComida} alt="icono comida" />
+          </button>
+        )}
+
+        {showData === "All" ? (
+          <button className="buttonTodosSelect" onClick={handleAll}>
+            <p>Todos</p>
+            <img src={iconComida} alt="icono comida" />
+          </button>
+        ) : (
+          <button className="buttonTodos" onClick={handleAll}>
+            <p>Todos</p>
+            <img src={iconComida} alt="icono comida" />
+          </button>
+        )}
       </div>
       <div className="side-recetas">
         <div className="recetasGaleria">
