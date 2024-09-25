@@ -9,13 +9,16 @@
 }
 .side-recetas {
   display: flex;
+  justify-content: center;
   gap: 15px;
 }
 .recetasGaleria {
+  max-width: 1100px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  margin-inline: auto;
   margin-block: 20px;
 }
 .containerTitle {
@@ -57,18 +60,34 @@
   margin: 0;
 }
 .buttonEntrante {
+  background-color: #ff5e282f;
+  transition: 0.2s;
+}
+.buttonEntranteSelect {
   background-color: #ff5d28;
   transition: 0.2s;
 }
 .buttonPrincipal {
+  background-color: #98abee2d;
+  transition: 0.2s;
+}
+.buttonPrincipalSelect {
   background-color: #98abee;
   transition: 0.2s;
 }
 .buttonPostre {
+  background-color: #ee99c225;
+  transition: 0.2s;
+}
+.buttonPostreSelect {
   background-color: #ee99c2;
   transition: 0.2s;
 }
 .buttonTodos {
+  background-color: #a3c9aa25;
+  transition: 0.2s;
+}
+.buttonTodosSelect {
   background-color: #a3c9aa;
   transition: 0.2s;
 }
@@ -89,7 +108,7 @@
   font-size: 1.1rem;
   margin-inline: auto;
   margin-block: 20px;
-  background-color:  #F2BC57;
+  background-color: #f2bc57;
   transition: 0.2s;
 }
 .buttonMostrarMas button p {
@@ -118,7 +137,7 @@
 }
 .buttonMostrarMas button:hover {
   background-color: #956c3d;
-    color: white;
+  color: white;
   transition: 0.5s;
   scale: 0.9;
 }
